@@ -1,0 +1,776 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/n3rdy/dev/c/glue/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210110.0/
+$(DEBUG_DIR)/obj/%.o	Makefile	/^$(DEBUG_OBJ): $(DEBUG_DIR)\/obj\/%.o : $(SRC_DIR)\/%.c$/;"	t
+$(DEBUG_DIR)/obj/%.o	mosaic/Makefile	/^$(DEBUG_OBJ): $(DEBUG_DIR)\/obj\/%.o : $(SRCDIR)\/%.c$/;"	t
+$(DEBUG_OBJ)	Makefile	/^$(DEBUG_OBJ): $(DEBUG_DIR)\/obj\/%.o : $(SRC_DIR)\/%.c$/;"	t
+$(DEBUG_OBJ)	mosaic/Makefile	/^$(DEBUG_OBJ): $(DEBUG_DIR)\/obj\/%.o : $(SRCDIR)\/%.c$/;"	t
+$(RELEASE_DIR)/obj/%.o	mosaic/Makefile	/^$(RELEASE_OBJ): $(RELEASE_DIR)\/obj\/%.o : $(SRCDIR)\/%.c$/;"	t
+$(RELEASE_OBJ)	mosaic/Makefile	/^$(RELEASE_OBJ): $(RELEASE_DIR)\/obj\/%.o : $(SRCDIR)\/%.c$/;"	t
+.PHONY	mosaic/Makefile	/^.PHONY = clean all debug release$/;"	m
+CC	Makefile	/^CC:=gcc$/;"	m
+CC	mosaic/Makefile	/^CC=gcc$/;"	m
+DEBUG_CFLAGS	Makefile	/^DEBUG_CFLAGS:=-Wall -g -O0 -fsanitize=address -s$/;"	m
+DEBUG_CFLAGS	mosaic/Makefile	/^DEBUG_CFLAGS:=-Wall -g -O0 -fsanitize=address -s$/;"	m
+DEBUG_DIR	Makefile	/^DEBUG_DIR:=debug$/;"	m
+DEBUG_DIR	mosaic/Makefile	/^DEBUG_DIR:=debug$/;"	m
+DEBUG_LINK	Makefile	/^DEBUG_LINK:=-lasan $(GLFW_LINK) $(GLEW_LINK) -lmosaic$/;"	m
+DEBUG_LINK_DIRS	Makefile	/^DEBUG_LINK_DIRS:=-Ldebug -Lmosaic\/debug$/;"	m
+DEBUG_OBJ	Makefile	/^DEBUG_OBJ:=$(SRC:$(SRC_DIR)\/%.c=$(DEBUG_DIR)\/obj\/%.o)$/;"	m
+DEBUG_OBJ	mosaic/Makefile	/^DEBUG_OBJ:=$(SRC:$(SRCDIR)\/%.c=$(DEBUG_DIR)\/obj\/%.o)$/;"	m
+FAST_BITS	src/stb_image.h	/^#define FAST_BITS /;"	d
+GLEW_LINK	Makefile	/^GLEW_LINK=$(shell pkg-config --libs --static glew)$/;"	m
+GLFW_INCLUDE_NONE	src/input.c	/^#define GLFW_INCLUDE_NONE$/;"	d	file:
+GLFW_INCLUDE_NONE	src/input.h	/^#define GLFW_INCLUDE_NONE$/;"	d
+GLFW_INCLUDE_NONE	src/test/test.c	/^#define GLFW_INCLUDE_NONE$/;"	d	file:
+GLFW_INCLUDE_NONE	src/window.c	/^#define GLFW_INCLUDE_NONE$/;"	d	file:
+GLFW_INCLUDE_NONE	src/window.h	/^#define GLFW_INCLUDE_NONE$/;"	d
+GLFW_LINK	Makefile	/^GLFW_LINK=$(shell pkg-config --libs --static glfw3)$/;"	m
+GLUE_COLOR_H	src/color.h	/^#define GLUE_COLOR_H$/;"	d
+GLUE_HORI_LEFT	src/shape.h	/^#define GLUE_HORI_LEFT /;"	d
+GLUE_HORI_MIDDLE	src/shape.h	/^#define GLUE_HORI_MIDDLE /;"	d
+GLUE_HORI_RIGHT	src/shape.h	/^#define GLUE_HORI_RIGHT /;"	d
+GLUE_IMAGE_H	src/image.h	/^#define GLUE_IMAGE_H$/;"	d
+GLUE_INPUT_H	src/input.h	/^#define GLUE_INPUT_H$/;"	d
+GLUE_KEY	src/input.h	/^#define GLUE_KEY(/;"	d
+GLUE_KEY_0	src/input.h	/^#define GLUE_KEY_0 /;"	d
+GLUE_KEY_1	src/input.h	/^#define GLUE_KEY_1 /;"	d
+GLUE_KEY_2	src/input.h	/^#define GLUE_KEY_2 /;"	d
+GLUE_KEY_3	src/input.h	/^#define GLUE_KEY_3 /;"	d
+GLUE_KEY_4	src/input.h	/^#define GLUE_KEY_4 /;"	d
+GLUE_KEY_5	src/input.h	/^#define GLUE_KEY_5 /;"	d
+GLUE_KEY_6	src/input.h	/^#define GLUE_KEY_6 /;"	d
+GLUE_KEY_7	src/input.h	/^#define GLUE_KEY_7 /;"	d
+GLUE_KEY_8	src/input.h	/^#define GLUE_KEY_8 /;"	d
+GLUE_KEY_9	src/input.h	/^#define GLUE_KEY_9 /;"	d
+GLUE_KEY_A	src/input.h	/^#define GLUE_KEY_A /;"	d
+GLUE_KEY_APOSTROPHE	src/input.h	/^#define GLUE_KEY_APOSTROPHE /;"	d
+GLUE_KEY_B	src/input.h	/^#define GLUE_KEY_B /;"	d
+GLUE_KEY_BACKSLASH	src/input.h	/^#define GLUE_KEY_BACKSLASH /;"	d
+GLUE_KEY_BACKSPACE	src/input.h	/^#define GLUE_KEY_BACKSPACE /;"	d
+GLUE_KEY_C	src/input.h	/^#define GLUE_KEY_C /;"	d
+GLUE_KEY_CAPS_LOCK	src/input.h	/^#define GLUE_KEY_CAPS_LOCK /;"	d
+GLUE_KEY_COMMA	src/input.h	/^#define GLUE_KEY_COMMA /;"	d
+GLUE_KEY_D	src/input.h	/^#define GLUE_KEY_D /;"	d
+GLUE_KEY_DELETE	src/input.h	/^#define GLUE_KEY_DELETE /;"	d
+GLUE_KEY_DOWN	src/input.h	/^#define GLUE_KEY_DOWN /;"	d
+GLUE_KEY_E	src/input.h	/^#define GLUE_KEY_E /;"	d
+GLUE_KEY_END	src/input.h	/^#define GLUE_KEY_END /;"	d
+GLUE_KEY_ENTER	src/input.h	/^#define GLUE_KEY_ENTER /;"	d
+GLUE_KEY_EQUAL	src/input.h	/^#define GLUE_KEY_EQUAL /;"	d
+GLUE_KEY_ESCAPE	src/input.h	/^#define GLUE_KEY_ESCAPE /;"	d
+GLUE_KEY_F	src/input.h	/^#define GLUE_KEY_F /;"	d
+GLUE_KEY_F1	src/input.h	/^#define GLUE_KEY_F1 /;"	d
+GLUE_KEY_F10	src/input.h	/^#define GLUE_KEY_F10 /;"	d
+GLUE_KEY_F11	src/input.h	/^#define GLUE_KEY_F11 /;"	d
+GLUE_KEY_F12	src/input.h	/^#define GLUE_KEY_F12 /;"	d
+GLUE_KEY_F13	src/input.h	/^#define GLUE_KEY_F13 /;"	d
+GLUE_KEY_F14	src/input.h	/^#define GLUE_KEY_F14 /;"	d
+GLUE_KEY_F15	src/input.h	/^#define GLUE_KEY_F15 /;"	d
+GLUE_KEY_F16	src/input.h	/^#define GLUE_KEY_F16 /;"	d
+GLUE_KEY_F17	src/input.h	/^#define GLUE_KEY_F17 /;"	d
+GLUE_KEY_F18	src/input.h	/^#define GLUE_KEY_F18 /;"	d
+GLUE_KEY_F19	src/input.h	/^#define GLUE_KEY_F19 /;"	d
+GLUE_KEY_F2	src/input.h	/^#define GLUE_KEY_F2 /;"	d
+GLUE_KEY_F20	src/input.h	/^#define GLUE_KEY_F20 /;"	d
+GLUE_KEY_F21	src/input.h	/^#define GLUE_KEY_F21 /;"	d
+GLUE_KEY_F22	src/input.h	/^#define GLUE_KEY_F22 /;"	d
+GLUE_KEY_F23	src/input.h	/^#define GLUE_KEY_F23 /;"	d
+GLUE_KEY_F24	src/input.h	/^#define GLUE_KEY_F24 /;"	d
+GLUE_KEY_F25	src/input.h	/^#define GLUE_KEY_F25 /;"	d
+GLUE_KEY_F3	src/input.h	/^#define GLUE_KEY_F3 /;"	d
+GLUE_KEY_F4	src/input.h	/^#define GLUE_KEY_F4 /;"	d
+GLUE_KEY_F5	src/input.h	/^#define GLUE_KEY_F5 /;"	d
+GLUE_KEY_F6	src/input.h	/^#define GLUE_KEY_F6 /;"	d
+GLUE_KEY_F7	src/input.h	/^#define GLUE_KEY_F7 /;"	d
+GLUE_KEY_F8	src/input.h	/^#define GLUE_KEY_F8 /;"	d
+GLUE_KEY_F9	src/input.h	/^#define GLUE_KEY_F9 /;"	d
+GLUE_KEY_G	src/input.h	/^#define GLUE_KEY_G /;"	d
+GLUE_KEY_GRAVE_ACCENT	src/input.h	/^#define GLUE_KEY_GRAVE_ACCENT /;"	d
+GLUE_KEY_H	src/input.h	/^#define GLUE_KEY_H /;"	d
+GLUE_KEY_HOME	src/input.h	/^#define GLUE_KEY_HOME /;"	d
+GLUE_KEY_I	src/input.h	/^#define GLUE_KEY_I /;"	d
+GLUE_KEY_INSERT	src/input.h	/^#define GLUE_KEY_INSERT /;"	d
+GLUE_KEY_J	src/input.h	/^#define GLUE_KEY_J /;"	d
+GLUE_KEY_K	src/input.h	/^#define GLUE_KEY_K /;"	d
+GLUE_KEY_KP_0	src/input.h	/^#define GLUE_KEY_KP_0 /;"	d
+GLUE_KEY_KP_1	src/input.h	/^#define GLUE_KEY_KP_1 /;"	d
+GLUE_KEY_KP_2	src/input.h	/^#define GLUE_KEY_KP_2 /;"	d
+GLUE_KEY_KP_3	src/input.h	/^#define GLUE_KEY_KP_3 /;"	d
+GLUE_KEY_KP_4	src/input.h	/^#define GLUE_KEY_KP_4 /;"	d
+GLUE_KEY_KP_5	src/input.h	/^#define GLUE_KEY_KP_5 /;"	d
+GLUE_KEY_KP_6	src/input.h	/^#define GLUE_KEY_KP_6 /;"	d
+GLUE_KEY_KP_7	src/input.h	/^#define GLUE_KEY_KP_7 /;"	d
+GLUE_KEY_KP_8	src/input.h	/^#define GLUE_KEY_KP_8 /;"	d
+GLUE_KEY_KP_9	src/input.h	/^#define GLUE_KEY_KP_9 /;"	d
+GLUE_KEY_KP_ADD	src/input.h	/^#define GLUE_KEY_KP_ADD /;"	d
+GLUE_KEY_KP_DECIMAL	src/input.h	/^#define GLUE_KEY_KP_DECIMAL /;"	d
+GLUE_KEY_KP_DIVIDE	src/input.h	/^#define GLUE_KEY_KP_DIVIDE /;"	d
+GLUE_KEY_KP_ENTER	src/input.h	/^#define GLUE_KEY_KP_ENTER /;"	d
+GLUE_KEY_KP_EQUAL	src/input.h	/^#define GLUE_KEY_KP_EQUAL /;"	d
+GLUE_KEY_KP_MULTIPLY	src/input.h	/^#define GLUE_KEY_KP_MULTIPLY /;"	d
+GLUE_KEY_KP_SUBTRACT	src/input.h	/^#define GLUE_KEY_KP_SUBTRACT /;"	d
+GLUE_KEY_L	src/input.h	/^#define GLUE_KEY_L /;"	d
+GLUE_KEY_LAST	src/input.h	/^#define GLUE_KEY_LAST /;"	d
+GLUE_KEY_LEFT	src/input.h	/^#define GLUE_KEY_LEFT /;"	d
+GLUE_KEY_LEFT_ALT	src/input.h	/^#define GLUE_KEY_LEFT_ALT /;"	d
+GLUE_KEY_LEFT_BRACKET	src/input.h	/^#define GLUE_KEY_LEFT_BRACKET /;"	d
+GLUE_KEY_LEFT_CONTROL	src/input.h	/^#define GLUE_KEY_LEFT_CONTROL /;"	d
+GLUE_KEY_LEFT_SHIFT	src/input.h	/^#define GLUE_KEY_LEFT_SHIFT /;"	d
+GLUE_KEY_LEFT_SUPER	src/input.h	/^#define GLUE_KEY_LEFT_SUPER /;"	d
+GLUE_KEY_M	src/input.h	/^#define GLUE_KEY_M /;"	d
+GLUE_KEY_MENU	src/input.h	/^#define GLUE_KEY_MENU /;"	d
+GLUE_KEY_MINUS	src/input.h	/^#define GLUE_KEY_MINUS /;"	d
+GLUE_KEY_N	src/input.h	/^#define GLUE_KEY_N /;"	d
+GLUE_KEY_NUM_LOCK	src/input.h	/^#define GLUE_KEY_NUM_LOCK /;"	d
+GLUE_KEY_O	src/input.h	/^#define GLUE_KEY_O /;"	d
+GLUE_KEY_P	src/input.h	/^#define GLUE_KEY_P /;"	d
+GLUE_KEY_PAGE_DOWN	src/input.h	/^#define GLUE_KEY_PAGE_DOWN /;"	d
+GLUE_KEY_PAGE_UP	src/input.h	/^#define GLUE_KEY_PAGE_UP /;"	d
+GLUE_KEY_PAUSE	src/input.h	/^#define GLUE_KEY_PAUSE /;"	d
+GLUE_KEY_PERIOD	src/input.h	/^#define GLUE_KEY_PERIOD /;"	d
+GLUE_KEY_PRINT_SCREEN	src/input.h	/^#define GLUE_KEY_PRINT_SCREEN /;"	d
+GLUE_KEY_Q	src/input.h	/^#define GLUE_KEY_Q /;"	d
+GLUE_KEY_R	src/input.h	/^#define GLUE_KEY_R /;"	d
+GLUE_KEY_RIGHT	src/input.h	/^#define GLUE_KEY_RIGHT /;"	d
+GLUE_KEY_RIGHT_ALT	src/input.h	/^#define GLUE_KEY_RIGHT_ALT /;"	d
+GLUE_KEY_RIGHT_BRACKET	src/input.h	/^#define GLUE_KEY_RIGHT_BRACKET /;"	d
+GLUE_KEY_RIGHT_CONTROL	src/input.h	/^#define GLUE_KEY_RIGHT_CONTROL /;"	d
+GLUE_KEY_RIGHT_SHIFT	src/input.h	/^#define GLUE_KEY_RIGHT_SHIFT /;"	d
+GLUE_KEY_RIGHT_SUPER	src/input.h	/^#define GLUE_KEY_RIGHT_SUPER /;"	d
+GLUE_KEY_S	src/input.h	/^#define GLUE_KEY_S /;"	d
+GLUE_KEY_SCROLL_LOCK	src/input.h	/^#define GLUE_KEY_SCROLL_LOCK /;"	d
+GLUE_KEY_SEMICOLON	src/input.h	/^#define GLUE_KEY_SEMICOLON /;"	d
+GLUE_KEY_SLASH	src/input.h	/^#define GLUE_KEY_SLASH /;"	d
+GLUE_KEY_SPACE	src/input.h	/^#define GLUE_KEY_SPACE /;"	d
+GLUE_KEY_T	src/input.h	/^#define GLUE_KEY_T /;"	d
+GLUE_KEY_TAB	src/input.h	/^#define GLUE_KEY_TAB /;"	d
+GLUE_KEY_U	src/input.h	/^#define GLUE_KEY_U /;"	d
+GLUE_KEY_UNKNOWN	src/input.h	/^#define GLUE_KEY_UNKNOWN /;"	d
+GLUE_KEY_UP	src/input.h	/^#define GLUE_KEY_UP /;"	d
+GLUE_KEY_V	src/input.h	/^#define GLUE_KEY_V /;"	d
+GLUE_KEY_W	src/input.h	/^#define GLUE_KEY_W /;"	d
+GLUE_KEY_WORLD_1	src/input.h	/^#define GLUE_KEY_WORLD_1 /;"	d
+GLUE_KEY_WORLD_2	src/input.h	/^#define GLUE_KEY_WORLD_2 /;"	d
+GLUE_KEY_X	src/input.h	/^#define GLUE_KEY_X /;"	d
+GLUE_KEY_Y	src/input.h	/^#define GLUE_KEY_Y /;"	d
+GLUE_KEY_Z	src/input.h	/^#define GLUE_KEY_Z /;"	d
+GLUE_PRESSED	src/input.h	/^#define GLUE_PRESSED /;"	d
+GLUE_RELEASED	src/input.h	/^#define GLUE_RELEASED /;"	d
+GLUE_RENDERER_H	src/renderer.h	/^#define GLUE_RENDERER_H$/;"	d
+GLUE_SHAPE_H	src/shape.h	/^#define GLUE_SHAPE_H$/;"	d
+GLUE_VERTEX_H	src/vertex.h	/^#define GLUE_VERTEX_H$/;"	d
+GLUE_VERT_BOTTOM	src/shape.h	/^#define GLUE_VERT_BOTTOM /;"	d
+GLUE_VERT_MIDDLE	src/shape.h	/^#define GLUE_VERT_MIDDLE /;"	d
+GLUE_VERT_TOP	src/shape.h	/^#define GLUE_VERT_TOP /;"	d
+GLUE_WINDOW_H	src/window.h	/^#define GLUE_WINDOW_H$/;"	d
+INCL	Makefile	/^INCL:=-Isrc -Imosaic\/src$/;"	m
+MOSAIC_MATRIX_H	mosaic/src/mosaic.h	/^#define MOSAIC_MATRIX_H$/;"	d
+MessageCallback	src/window.c	/^void MessageCallback( GLenum source,$/;"	f	typeref:typename:void
+RELEASE_CFLAGS	mosaic/Makefile	/^RELEASE_CFLAGS:=-Wall -s$/;"	m
+RELEASE_DIR	mosaic/Makefile	/^RELEASE_DIR:=release$/;"	m
+RELEASE_OBJ	mosaic/Makefile	/^RELEASE_OBJ:=$(SRC:$(SRCDIR)\/%.c=$(RELEASE_DIR)\/obj\/%.o)$/;"	m
+SRC	Makefile	/^SRC:=$(wildcard $(SRC_DIR)\/*.c)$/;"	m
+SRC	mosaic/Makefile	/^SRC:=$(wildcard $(SRCDIR)\/*.c)$/;"	m
+SRCDIR	mosaic/Makefile	/^SRCDIR:=src$/;"	m
+SRC_DIR	Makefile	/^SRC_DIR:=src$/;"	m
+STBIDEF	src/stb_image.h	/^#define STBIDEF /;"	d
+STBI_ASSERT	src/stb_image.h	/^#define STBI_ASSERT(/;"	d
+STBI_EXTERN	src/stb_image.h	/^#define STBI_EXTERN /;"	d
+STBI_FREE	src/stb_image.h	/^#define STBI_FREE(/;"	d
+STBI_HAS_LROTL	src/stb_image.h	/^#define STBI_HAS_LROTL$/;"	d
+STBI_INCLUDE_STB_IMAGE_H	src/stb_image.h	/^#define STBI_INCLUDE_STB_IMAGE_H$/;"	d
+STBI_MALLOC	src/stb_image.h	/^#define STBI_MALLOC(/;"	d
+STBI_MAX_DIMENSIONS	src/stb_image.h	/^#define STBI_MAX_DIMENSIONS /;"	d
+STBI_NOTUSED	src/stb_image.h	/^#define STBI_NOTUSED(/;"	d
+STBI_NO_BMP	src/stb_image.h	/^   #define STBI_NO_BMP$/;"	d
+STBI_NO_GIF	src/stb_image.h	/^   #define STBI_NO_GIF$/;"	d
+STBI_NO_HDR	src/stb_image.h	/^   #define STBI_NO_HDR$/;"	d
+STBI_NO_JPEG	src/stb_image.h	/^   #define STBI_NO_JPEG$/;"	d
+STBI_NO_PIC	src/stb_image.h	/^   #define STBI_NO_PIC$/;"	d
+STBI_NO_PNG	src/stb_image.h	/^   #define STBI_NO_PNG$/;"	d
+STBI_NO_PNM	src/stb_image.h	/^   #define STBI_NO_PNM$/;"	d
+STBI_NO_PSD	src/stb_image.h	/^   #define STBI_NO_PSD$/;"	d
+STBI_NO_SIMD	src/stb_image.h	/^#define STBI_NO_SIMD$/;"	d
+STBI_NO_TGA	src/stb_image.h	/^   #define STBI_NO_TGA$/;"	d
+STBI_NO_ZLIB	src/stb_image.h	/^#define STBI_NO_ZLIB$/;"	d
+STBI_ORDER_BGR	src/stb_image.h	/^   STBI_ORDER_BGR$/;"	e	enum:__anon9cbf1c1d0403
+STBI_ORDER_RGB	src/stb_image.h	/^   STBI_ORDER_RGB,$/;"	e	enum:__anon9cbf1c1d0403
+STBI_REALLOC	src/stb_image.h	/^#define STBI_REALLOC(/;"	d
+STBI_REALLOC_SIZED	src/stb_image.h	/^#define STBI_REALLOC_SIZED(/;"	d
+STBI_SIMD_ALIGN	src/stb_image.h	/^#define STBI_SIMD_ALIGN(/;"	d
+STBI_SSE2	src/stb_image.h	/^#define STBI_SSE2$/;"	d
+STBI_THREAD_LOCAL	src/stb_image.h	/^        #define STBI_THREAD_LOCAL /;"	d
+STBI_THREAD_LOCAL	src/stb_image.h	/^      #define STBI_THREAD_LOCAL /;"	d
+STBI_VERSION	src/stb_image.h	/^#define STBI_VERSION /;"	d
+STBI__BYTECAST	src/stb_image.h	/^#define STBI__BYTECAST(/;"	d
+STBI__CASE	src/stb_image.h	/^         #define STBI__CASE(/;"	d
+STBI__CASE	src/stb_image.h	/^      #define STBI__CASE(/;"	d
+STBI__COMBO	src/stb_image.h	/^      #define STBI__COMBO(/;"	d
+STBI__F_avg	src/stb_image.h	/^   STBI__F_avg=3,$/;"	e	enum:__anon9cbf1c1d0f03
+STBI__F_avg_first	src/stb_image.h	/^   STBI__F_avg_first,$/;"	e	enum:__anon9cbf1c1d0f03
+STBI__F_none	src/stb_image.h	/^   STBI__F_none=0,$/;"	e	enum:__anon9cbf1c1d0f03
+STBI__F_paeth	src/stb_image.h	/^   STBI__F_paeth=4,$/;"	e	enum:__anon9cbf1c1d0f03
+STBI__F_paeth_first	src/stb_image.h	/^   STBI__F_paeth_first$/;"	e	enum:__anon9cbf1c1d0f03
+STBI__F_sub	src/stb_image.h	/^   STBI__F_sub=1,$/;"	e	enum:__anon9cbf1c1d0f03
+STBI__F_up	src/stb_image.h	/^   STBI__F_up=2,$/;"	e	enum:__anon9cbf1c1d0f03
+STBI__HDR_BUFLEN	src/stb_image.h	/^#define STBI__HDR_BUFLEN /;"	d
+STBI__IDCT_1D	src/stb_image.h	/^#define STBI__IDCT_1D(/;"	d
+STBI__MARKER_none	src/stb_image.h	/^#define STBI__MARKER_none /;"	d
+STBI__PNG_TYPE	src/stb_image.h	/^#define STBI__PNG_TYPE(/;"	d
+STBI__RESTART	src/stb_image.h	/^#define STBI__RESTART(/;"	d
+STBI__SCAN_header	src/stb_image.h	/^   STBI__SCAN_header$/;"	e	enum:__anon9cbf1c1d0603
+STBI__SCAN_load	src/stb_image.h	/^   STBI__SCAN_load=0,$/;"	e	enum:__anon9cbf1c1d0603
+STBI__SCAN_type	src/stb_image.h	/^   STBI__SCAN_type,$/;"	e	enum:__anon9cbf1c1d0603
+STBI__X64_TARGET	src/stb_image.h	/^#define STBI__X64_TARGET$/;"	d
+STBI__X86_TARGET	src/stb_image.h	/^#define STBI__X86_TARGET$/;"	d
+STBI__ZFAST_BITS	src/stb_image.h	/^#define STBI__ZFAST_BITS /;"	d
+STBI__ZFAST_MASK	src/stb_image.h	/^#define STBI__ZFAST_MASK /;"	d
+STBI_default	src/stb_image.h	/^   STBI_default = 0, \/\/ only used for desired_channels$/;"	e	enum:__anon9cbf1c1d0103
+STBI_grey	src/stb_image.h	/^   STBI_grey       = 1,$/;"	e	enum:__anon9cbf1c1d0103
+STBI_grey_alpha	src/stb_image.h	/^   STBI_grey_alpha = 2,$/;"	e	enum:__anon9cbf1c1d0103
+STBI_rgb	src/stb_image.h	/^   STBI_rgb        = 3,$/;"	e	enum:__anon9cbf1c1d0103
+STBI_rgb_alpha	src/stb_image.h	/^   STBI_rgb_alpha  = 4$/;"	e	enum:__anon9cbf1c1d0103
+STB_IMAGE_IMPLEMENTATION	src/image.h	/^#define STB_IMAGE_IMPLEMENTATION$/;"	d
+YCbCr_to_RGB_kernel	src/stb_image.h	/^   void (*YCbCr_to_RGB_kernel)(stbi_uc *out, const stbi_uc *y, const stbi_uc *pcb, const stbi_uc/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:void (*)(stbi_uc * out,const stbi_uc * y,const stbi_uc * pcb,const stbi_uc * pcr,int count,int step)
+__anon9cbf1c1d0103	src/stb_image.h	/^{$/;"	g
+__anon9cbf1c1d0208	src/stb_image.h	/^{$/;"	s
+__anon9cbf1c1d0308	src/stb_image.h	/^{$/;"	s
+__anon9cbf1c1d0403	src/stb_image.h	/^{$/;"	g
+__anon9cbf1c1d0508	src/stb_image.h	/^{$/;"	s
+__anon9cbf1c1d0603	src/stb_image.h	/^{$/;"	g
+__anon9cbf1c1d0708	src/stb_image.h	/^{$/;"	s
+__anon9cbf1c1d0808	src/stb_image.h	/^{$/;"	s
+__anon9cbf1c1d0908	src/stb_image.h	/^   {$/;"	s	struct:__anon9cbf1c1d0808
+__anon9cbf1c1d0a08	src/stb_image.h	/^{$/;"	s
+__anon9cbf1c1d0b08	src/stb_image.h	/^{$/;"	s
+__anon9cbf1c1d0c08	src/stb_image.h	/^{$/;"	s
+__anon9cbf1c1d0d08	src/stb_image.h	/^{$/;"	s
+__anon9cbf1c1d0e08	src/stb_image.h	/^{$/;"	s
+__anon9cbf1c1d0f03	src/stb_image.h	/^enum {$/;"	g
+__anon9cbf1c1d1008	src/stb_image.h	/^{$/;"	s
+__anon9cbf1c1d1108	src/stb_image.h	/^{$/;"	s
+__anon9cbf1c1d1208	src/stb_image.h	/^{$/;"	s
+__anon9cbf1c1d1308	src/stb_image.h	/^{$/;"	s
+all	mosaic/Makefile	/^all: debug release $/;"	t
+all_a	src/stb_image.h	/^   unsigned int mr,mg,mb,ma, all_a;$/;"	m	struct:__anon9cbf1c1d1008	typeref:typename:unsigned int
+alpha	src/color.h	/^	float alpha;$/;"	m	struct:glue_rgba_n	typeref:typename:float
+alpha	src/color.h	/^	unsigned char alpha;$/;"	m	struct:glue_rgba	typeref:typename:unsigned char
+angle	src/shape.h	/^	float angle;$/;"	m	struct:glue_shape	typeref:typename:float
+app14_color_transform	src/stb_image.h	/^   int            app14_color_transform; \/\/ Adobe APP14 tag$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:int
+background	src/stb_image.h	/^   stbi_uc *background;          \/\/ The current "background" as far as a gif is concerned$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:stbi_uc *
+bgindex	src/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags;$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:int
+bits_per_channel	src/stb_image.h	/^   int bits_per_channel;$/;"	m	struct:__anon9cbf1c1d0508	typeref:typename:int
+blue	src/color.h	/^	float blue;$/;"	m	struct:glue_rgba_n	typeref:typename:float
+blue	src/color.h	/^	unsigned char blue;$/;"	m	struct:glue_rgba	typeref:typename:unsigned char
+bpp	src/stb_image.h	/^   int bpp, offset, hsz;$/;"	m	struct:__anon9cbf1c1d1008	typeref:typename:int
+buffer_start	src/stb_image.h	/^   stbi_uc buffer_start[128];$/;"	m	struct:__anon9cbf1c1d0308	typeref:typename:stbi_uc[128]
+buflen	src/stb_image.h	/^   int buflen;$/;"	m	struct:__anon9cbf1c1d0308	typeref:typename:int
+callback_already_read	src/stb_image.h	/^   int callback_already_read;$/;"	m	struct:__anon9cbf1c1d0308	typeref:typename:int
+channel	src/stb_image.h	/^   stbi_uc size,type,channel;$/;"	m	struct:__anon9cbf1c1d1108	typeref:typename:stbi_uc
+channel_order	src/stb_image.h	/^   int channel_order;$/;"	m	struct:__anon9cbf1c1d0508	typeref:typename:int
+clean	Makefile	/^clean:$/;"	t
+clean	mosaic/Makefile	/^clean:$/;"	t
+code	src/stb_image.h	/^   stbi__uint16 code[256];$/;"	m	struct:__anon9cbf1c1d0708	typeref:typename:stbi__uint16[256]
+code_bits	src/stb_image.h	/^   int            code_bits;   \/\/ number of valid bits$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:int
+code_buffer	src/stb_image.h	/^   stbi__uint32   code_buffer; \/\/ jpeg entropy-coded buffer$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:stbi__uint32
+code_buffer	src/stb_image.h	/^   stbi__uint32 code_buffer;$/;"	m	struct:__anon9cbf1c1d0c08	typeref:typename:stbi__uint32
+codes	src/stb_image.h	/^   stbi__gif_lzw codes[8192];$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:stbi__gif_lzw[8192]
+coeff	src/stb_image.h	/^      short   *coeff;   \/\/ progressive only$/;"	m	struct:__anon9cbf1c1d0808::__anon9cbf1c1d0908	typeref:typename:short *
+coeff_h	src/stb_image.h	/^      int      coeff_w, coeff_h; \/\/ number of 8x8 coefficient blocks$/;"	m	struct:__anon9cbf1c1d0808::__anon9cbf1c1d0908	typeref:typename:int
+coeff_w	src/stb_image.h	/^      int      coeff_w, coeff_h; \/\/ number of 8x8 coefficient blocks$/;"	m	struct:__anon9cbf1c1d0808::__anon9cbf1c1d0908	typeref:typename:int
+color	src/shape.h	/^	struct glue_rgba_n color;$/;"	m	struct:glue_shape	typeref:struct:glue_rgba_n
+color_table	src/stb_image.h	/^   stbi_uc *color_table;$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:stbi_uc *
+cols	mosaic/src/mosaic.h	/^	unsigned int cols;$/;"	m	struct:mosaic_matrix	typeref:typename:unsigned int
+cur_x	src/stb_image.h	/^   int cur_x, cur_y;$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:int
+cur_y	src/stb_image.h	/^   int cur_x, cur_y;$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:int
+data	src/stb_image.h	/^      stbi_uc *data;$/;"	m	struct:__anon9cbf1c1d0808::__anon9cbf1c1d0908	typeref:typename:stbi_uc *
+dc_pred	src/stb_image.h	/^      int dc_pred;$/;"	m	struct:__anon9cbf1c1d0808::__anon9cbf1c1d0908	typeref:typename:int
+dct_bfly32o	src/stb_image.h	/^   #define dct_bfly32o(/;"	d
+dct_bfly32o	src/stb_image.h	/^#define dct_bfly32o(/;"	d
+dct_const	src/stb_image.h	/^   #define dct_const(/;"	d
+dct_interleave16	src/stb_image.h	/^   #define dct_interleave16(/;"	d
+dct_interleave8	src/stb_image.h	/^   #define dct_interleave8(/;"	d
+dct_long_mac	src/stb_image.h	/^#define dct_long_mac(/;"	d
+dct_long_mul	src/stb_image.h	/^#define dct_long_mul(/;"	d
+dct_pass	src/stb_image.h	/^   #define dct_pass(/;"	d
+dct_pass	src/stb_image.h	/^#define dct_pass(/;"	d
+dct_rot	src/stb_image.h	/^   #define dct_rot(/;"	d
+dct_trn16	src/stb_image.h	/^#define dct_trn16(/;"	d
+dct_trn32	src/stb_image.h	/^#define dct_trn32(/;"	d
+dct_trn64	src/stb_image.h	/^#define dct_trn64(/;"	d
+dct_trn8_16	src/stb_image.h	/^#define dct_trn8_16(/;"	d
+dct_trn8_32	src/stb_image.h	/^#define dct_trn8_32(/;"	d
+dct_trn8_8	src/stb_image.h	/^#define dct_trn8_8(/;"	d
+dct_wadd	src/stb_image.h	/^   #define dct_wadd(/;"	d
+dct_wadd	src/stb_image.h	/^#define dct_wadd(/;"	d
+dct_widen	src/stb_image.h	/^   #define dct_widen(/;"	d
+dct_widen	src/stb_image.h	/^#define dct_widen(/;"	d
+dct_wsub	src/stb_image.h	/^   #define dct_wsub(/;"	d
+dct_wsub	src/stb_image.h	/^#define dct_wsub(/;"	d
+debug	Makefile	/^debug: $(DEBUG_OBJ)$/;"	t
+debug	mosaic/Makefile	/^debug: $(DEBUG_OBJ)$/;"	t
+delay	src/stb_image.h	/^   int delay;$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:int
+delta	src/stb_image.h	/^   int    delta[17];   \/\/ old 'firstsymbol' - old 'firstcode'$/;"	m	struct:__anon9cbf1c1d0708	typeref:typename:int[17]
+depth	src/stb_image.h	/^   int depth;$/;"	m	struct:__anon9cbf1c1d0e08	typeref:typename:int
+dequant	src/stb_image.h	/^   stbi__uint16 dequant[4][64];$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:stbi__uint16[4][64]
+eflags	src/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags;$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:int
+eob_run	src/stb_image.h	/^   int            eob_run;$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:int
+eof	src/stb_image.h	/^   int      (*eof)   (void *user);                       \/\/ returns nonzero if we are at end o/;"	m	struct:__anon9cbf1c1d0208	typeref:typename:int (*)(void * user)
+expanded	src/stb_image.h	/^   stbi_uc *idata, *expanded, *out;$/;"	m	struct:__anon9cbf1c1d0e08	typeref:typename:stbi_uc *
+extra_read	src/stb_image.h	/^   int extra_read;$/;"	m	struct:__anon9cbf1c1d1008	typeref:typename:int
+fast	src/stb_image.h	/^   stbi__uint16 fast[1 << STBI__ZFAST_BITS];$/;"	m	struct:__anon9cbf1c1d0b08	typeref:typename:stbi__uint16[]
+fast	src/stb_image.h	/^   stbi_uc  fast[1 << FAST_BITS];$/;"	m	struct:__anon9cbf1c1d0708	typeref:typename:stbi_uc[]
+fast_ac	src/stb_image.h	/^   stbi__int16 fast_ac[4][1 << FAST_BITS];$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:stbi__int16[4][]
+first	src/stb_image.h	/^   stbi_uc first;$/;"	m	struct:__anon9cbf1c1d1208	typeref:typename:stbi_uc
+first_row_filter	src/stb_image.h	/^static stbi_uc first_row_filter[5] =$/;"	v	typeref:typename:stbi_uc[5]
+firstcode	src/stb_image.h	/^   stbi__uint16 firstcode[16];$/;"	m	struct:__anon9cbf1c1d0b08	typeref:typename:stbi__uint16[16]
+firstsymbol	src/stb_image.h	/^   stbi__uint16 firstsymbol[16];$/;"	m	struct:__anon9cbf1c1d0b08	typeref:typename:stbi__uint16[16]
+flags	src/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags;$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:int
+glue_error_callback	src/window.c	/^void glue_error_callback(int error, const char *description) {$/;"	f	typeref:typename:void
+glue_get_keystate	src/input.c	/^int glue_get_keystate(struct glue_window *window, int key) {$/;"	f	typeref:typename:int
+glue_init	src/window.c	/^int glue_init() {$/;"	f	typeref:typename:int
+glue_renderer	src/renderer.h	/^struct glue_renderer {$/;"	s
+glue_renderer_clear	src/renderer.c	/^int glue_renderer_clear() {$/;"	f	typeref:typename:int
+glue_renderer_compile_shape_shader	src/renderer.c	/^int glue_renderer_compile_shape_shader(struct glue_renderer *renderer) {$/;"	f	typeref:typename:int
+glue_renderer_draw_shape	src/renderer.c	/^int glue_renderer_draw_shape(struct glue_renderer *renderer, struct glue_shape *shape) {$/;"	f	typeref:typename:int
+glue_renderer_set_bkg	src/renderer.c	/^int glue_renderer_set_bkg(struct glue_rgba color) {$/;"	f	typeref:typename:int
+glue_rgba	src/color.h	/^struct glue_rgba {$/;"	s
+glue_rgba_n	src/color.h	/^struct glue_rgba_n {$/;"	s
+glue_rgba_normalise	src/color.c	/^struct glue_rgba_n glue_rgba_normalise(struct glue_rgba color) {$/;"	f	typeref:struct:glue_rgba_n
+glue_shape	src/shape.h	/^struct glue_shape {$/;"	s
+glue_shape_free	src/shape.c	/^int glue_shape_free(struct glue_shape *shape) {$/;"	f	typeref:typename:int
+glue_shape_init	src/shape.c	/^int glue_shape_init(struct glue_shape *shape) {$/;"	f	typeref:typename:int
+glue_shape_ngon	src/shape.c	/^int glue_shape_ngon(struct glue_shape *shape,$/;"	f	typeref:typename:int
+glue_shape_rect	src/shape.c	/^int glue_shape_rect(struct glue_shape *shape,$/;"	f	typeref:typename:int
+glue_shape_vertex	src/vertex.h	/^struct glue_shape_vertex {$/;"	s
+glue_terminate	src/window.c	/^void glue_terminate() {$/;"	f	typeref:typename:void
+glue_window	src/window.h	/^struct glue_window {$/;"	s
+glue_window_init	src/window.c	/^int glue_window_init(struct glue_window *window,$/;"	f	typeref:typename:int
+glue_window_update	src/window.c	/^int glue_window_update(struct glue_window *window) {$/;"	f	typeref:typename:int
+green	src/color.h	/^	float green;$/;"	m	struct:glue_rgba_n	typeref:typename:float
+green	src/color.h	/^	unsigned char green;$/;"	m	struct:glue_rgba	typeref:typename:unsigned char
+h	src/stb_image.h	/^      int h,v;$/;"	m	struct:__anon9cbf1c1d0808::__anon9cbf1c1d0908	typeref:typename:int
+h	src/stb_image.h	/^   int w,h;$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:int
+h2	src/stb_image.h	/^      int x,y,w2,h2;$/;"	m	struct:__anon9cbf1c1d0808::__anon9cbf1c1d0908	typeref:typename:int
+ha	src/stb_image.h	/^      int hd,ha;$/;"	m	struct:__anon9cbf1c1d0808::__anon9cbf1c1d0908	typeref:typename:int
+hd	src/stb_image.h	/^      int hd,ha;$/;"	m	struct:__anon9cbf1c1d0808::__anon9cbf1c1d0908	typeref:typename:int
+height	src/window.h	/^	unsigned int height;$/;"	m	struct:glue_window	typeref:typename:unsigned int
+history	src/stb_image.h	/^   stbi_uc *history;$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:stbi_uc *
+hs	src/stb_image.h	/^   int hs,vs;   \/\/ expansion factor in each axis$/;"	m	struct:__anon9cbf1c1d0a08	typeref:typename:int
+hsz	src/stb_image.h	/^   int bpp, offset, hsz;$/;"	m	struct:__anon9cbf1c1d1008	typeref:typename:int
+huff_ac	src/stb_image.h	/^   stbi__huffman huff_ac[4];$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:stbi__huffman[4]
+huff_dc	src/stb_image.h	/^   stbi__huffman huff_dc[4];$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:stbi__huffman[4]
+id	src/stb_image.h	/^      int id;$/;"	m	struct:__anon9cbf1c1d0808::__anon9cbf1c1d0908	typeref:typename:int
+idata	src/stb_image.h	/^   stbi_uc *idata, *expanded, *out;$/;"	m	struct:__anon9cbf1c1d0e08	typeref:typename:stbi_uc *
+idct_block_kernel	src/stb_image.h	/^   void (*idct_block_kernel)(stbi_uc *out, int out_stride, short data[64]);$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:void (*)(stbi_uc * out,int out_stride,short data[64])
+img_buffer	src/stb_image.h	/^   stbi_uc *img_buffer, *img_buffer_end;$/;"	m	struct:__anon9cbf1c1d0308	typeref:typename:stbi_uc *
+img_buffer_end	src/stb_image.h	/^   stbi_uc *img_buffer, *img_buffer_end;$/;"	m	struct:__anon9cbf1c1d0308	typeref:typename:stbi_uc *
+img_buffer_original	src/stb_image.h	/^   stbi_uc *img_buffer_original, *img_buffer_original_end;$/;"	m	struct:__anon9cbf1c1d0308	typeref:typename:stbi_uc *
+img_buffer_original_end	src/stb_image.h	/^   stbi_uc *img_buffer_original, *img_buffer_original_end;$/;"	m	struct:__anon9cbf1c1d0308	typeref:typename:stbi_uc *
+img_comp	src/stb_image.h	/^   } img_comp[4];$/;"	m	struct:__anon9cbf1c1d0808	typeref:struct:__anon9cbf1c1d0808::__anon9cbf1c1d0908[4]
+img_h_max	src/stb_image.h	/^   int img_h_max, img_v_max;$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:int
+img_mcu_h	src/stb_image.h	/^   int img_mcu_w, img_mcu_h;$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:int
+img_mcu_w	src/stb_image.h	/^   int img_mcu_w, img_mcu_h;$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:int
+img_mcu_x	src/stb_image.h	/^   int img_mcu_x, img_mcu_y;$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:int
+img_mcu_y	src/stb_image.h	/^   int img_mcu_x, img_mcu_y;$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:int
+img_n	src/stb_image.h	/^   int img_n, img_out_n;$/;"	m	struct:__anon9cbf1c1d0308	typeref:typename:int
+img_out_n	src/stb_image.h	/^   int img_n, img_out_n;$/;"	m	struct:__anon9cbf1c1d0308	typeref:typename:int
+img_v_max	src/stb_image.h	/^   int img_h_max, img_v_max;$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:int
+img_x	src/stb_image.h	/^   stbi__uint32 img_x, img_y;$/;"	m	struct:__anon9cbf1c1d0308	typeref:typename:stbi__uint32
+img_y	src/stb_image.h	/^   stbi__uint32 img_x, img_y;$/;"	m	struct:__anon9cbf1c1d0308	typeref:typename:stbi__uint32
+io	src/stb_image.h	/^   stbi_io_callbacks io;$/;"	m	struct:__anon9cbf1c1d0308	typeref:typename:stbi_io_callbacks
+io_user_data	src/stb_image.h	/^   void *io_user_data;$/;"	m	struct:__anon9cbf1c1d0308	typeref:typename:void *
+jfif	src/stb_image.h	/^   int            jfif;$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:int
+length	src/stb_image.h	/^   stbi__uint32 length;$/;"	m	struct:__anon9cbf1c1d0d08	typeref:typename:stbi__uint32
+lflags	src/stb_image.h	/^   int lflags;$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:int
+line0	src/stb_image.h	/^   stbi_uc *line0,*line1;$/;"	m	struct:__anon9cbf1c1d0a08	typeref:typename:stbi_uc *
+line1	src/stb_image.h	/^   stbi_uc *line0,*line1;$/;"	m	struct:__anon9cbf1c1d0a08	typeref:typename:stbi_uc *
+line_size	src/stb_image.h	/^   int line_size;$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:int
+linebuf	src/stb_image.h	/^      stbi_uc *linebuf;$/;"	m	struct:__anon9cbf1c1d0808::__anon9cbf1c1d0908	typeref:typename:stbi_uc *
+load_jpeg_image	src/stb_image.h	/^static stbi_uc *load_jpeg_image(stbi__jpeg *z, int *out_x, int *out_y, int *comp, int req_comp)$/;"	f	typeref:typename:stbi_uc *
+lpal	src/stb_image.h	/^   stbi_uc lpal[256][4];$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:stbi_uc[256][4]
+ma	src/stb_image.h	/^   unsigned int mr,mg,mb,ma, all_a;$/;"	m	struct:__anon9cbf1c1d1008	typeref:typename:unsigned int
+main	mosaic/src/test/test.c	/^int main() {$/;"	f	typeref:typename:int
+main	src/test/test.c	/^int main(void)$/;"	f	typeref:typename:int
+marker	src/stb_image.h	/^   unsigned char  marker;      \/\/ marker seen while filling entropy buffer$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:unsigned char
+max_x	src/stb_image.h	/^   int max_x, max_y;$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:int
+max_y	src/stb_image.h	/^   int max_x, max_y;$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:int
+maxcode	src/stb_image.h	/^   int maxcode[17];$/;"	m	struct:__anon9cbf1c1d0b08	typeref:typename:int[17]
+maxcode	src/stb_image.h	/^   unsigned int maxcode[18];$/;"	m	struct:__anon9cbf1c1d0708	typeref:typename:unsigned int[18]
+mb	src/stb_image.h	/^   unsigned int mr,mg,mb,ma, all_a;$/;"	m	struct:__anon9cbf1c1d1008	typeref:typename:unsigned int
+mg	src/stb_image.h	/^   unsigned int mr,mg,mb,ma, all_a;$/;"	m	struct:__anon9cbf1c1d1008	typeref:typename:unsigned int
+mosaic_cpy	mosaic/src/mosaic.c	/^int mosaic_cpy(struct mosaic_matrix *from, struct mosaic_matrix *to) {$/;"	f	typeref:typename:int
+mosaic_free	mosaic/src/mosaic.c	/^int mosaic_free(struct mosaic_matrix *matrix) {$/;"	f	typeref:typename:int
+mosaic_matrix	mosaic/src/mosaic.h	/^struct mosaic_matrix {$/;"	s
+mosaic_matrix_add	mosaic/src/mosaic.c	/^int mosaic_matrix_add(struct mosaic_matrix *m1, $/;"	f	typeref:typename:int
+mosaic_matrix_apply	mosaic/src/mosaic.c	/^int mosaic_matrix_apply(struct mosaic_matrix *matrix, float (*func)(float)) {$/;"	f	typeref:typename:int
+mosaic_matrix_assign	mosaic/src/mosaic.c	/^int mosaic_matrix_assign(struct mosaic_matrix *matrix, float *values) {$/;"	f	typeref:typename:int
+mosaic_matrix_init	mosaic/src/mosaic.c	/^int mosaic_matrix_init(struct mosaic_matrix *matrix, unsigned int rows, unsigned int cols) {$/;"	f	typeref:typename:int
+mosaic_matrix_multiply	mosaic/src/mosaic.c	/^int mosaic_matrix_multiply(struct mosaic_matrix *m1, $/;"	f	typeref:typename:int
+mosaic_print	mosaic/src/mosaic.c	/^int mosaic_print(struct mosaic_matrix *matrix) {$/;"	f	typeref:typename:int
+mr	src/stb_image.h	/^   unsigned int mr,mg,mb,ma, all_a;$/;"	m	struct:__anon9cbf1c1d1008	typeref:typename:unsigned int
+nomore	src/stb_image.h	/^   int            nomore;      \/\/ flag if we saw a marker so must stop$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:int
+num_bits	src/stb_image.h	/^   int num_bits;$/;"	m	struct:__anon9cbf1c1d0c08	typeref:typename:int
+num_channels	src/stb_image.h	/^   int num_channels;$/;"	m	struct:__anon9cbf1c1d0508	typeref:typename:int
+offset	src/stb_image.h	/^   int bpp, offset, hsz;$/;"	m	struct:__anon9cbf1c1d1008	typeref:typename:int
+order	src/stb_image.h	/^   int scan_n, order[4];$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:int[4]
+out	src/stb_image.h	/^   stbi_uc *idata, *expanded, *out;$/;"	m	struct:__anon9cbf1c1d0e08	typeref:typename:stbi_uc *
+out	src/stb_image.h	/^   stbi_uc *out;                 \/\/ output buffer (always 4 components)$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:stbi_uc *
+pal	src/stb_image.h	/^   stbi_uc  pal[256][4];$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:stbi_uc[256][4]
+parse	src/stb_image.h	/^   int parse, step;$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:int
+pos_x	src/shape.h	/^	unsigned int pos_x;$/;"	m	struct:glue_shape	typeref:typename:unsigned int
+pos_x	src/vertex.h	/^	float pos_x;$/;"	m	struct:glue_shape_vertex	typeref:typename:float
+pos_y	src/shape.h	/^	unsigned int pos_y;$/;"	m	struct:glue_shape	typeref:typename:unsigned int
+pos_y	src/vertex.h	/^	float pos_y;$/;"	m	struct:glue_shape_vertex	typeref:typename:float
+prefix	src/stb_image.h	/^   stbi__int16 prefix;$/;"	m	struct:__anon9cbf1c1d1208	typeref:typename:stbi__int16
+progressive	src/stb_image.h	/^   int            progressive;$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:int
+ratio	src/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags;$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:int
+raw	mosaic/src/mosaic.h	/^	float *raw;$/;"	m	struct:mosaic_matrix	typeref:typename:float *
+raw_coeff	src/stb_image.h	/^      void *raw_data, *raw_coeff;$/;"	m	struct:__anon9cbf1c1d0808::__anon9cbf1c1d0908	typeref:typename:void *
+raw_data	src/stb_image.h	/^      void *raw_data, *raw_coeff;$/;"	m	struct:__anon9cbf1c1d0808::__anon9cbf1c1d0908	typeref:typename:void *
+read	src/stb_image.h	/^   int      (*read)  (void *user,char *data,int size);   \/\/ fill 'data' with 'size' bytes.  re/;"	m	struct:__anon9cbf1c1d0208	typeref:typename:int (*)(void * user,char * data,int size)
+read_from_callbacks	src/stb_image.h	/^   int read_from_callbacks;$/;"	m	struct:__anon9cbf1c1d0308	typeref:typename:int
+red	src/color.h	/^	float red;$/;"	m	struct:glue_rgba_n	typeref:typename:float
+red	src/color.h	/^	unsigned char red;$/;"	m	struct:glue_rgba	typeref:typename:unsigned char
+release	mosaic/Makefile	/^release: $(RELEASE_OBJ)$/;"	t
+resample	src/stb_image.h	/^   resample_row_func resample;$/;"	m	struct:__anon9cbf1c1d0a08	typeref:typename:resample_row_func
+resample_row_1	src/stb_image.h	/^static stbi_uc *resample_row_1(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, int w, int hs)$/;"	f	typeref:typename:stbi_uc *
+resample_row_func	src/stb_image.h	/^typedef stbi_uc *(*resample_row_func)(stbi_uc *out, stbi_uc *in0, stbi_uc *in1,$/;"	t	typeref:typename:stbi_uc * (*)(stbi_uc * out,stbi_uc * in0,stbi_uc * in1,int w,int hs)
+resample_row_hv_2_kernel	src/stb_image.h	/^   stbi_uc *(*resample_row_hv_2_kernel)(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, int w, /;"	m	struct:__anon9cbf1c1d0808	typeref:typename:stbi_uc * (*)(stbi_uc * out,stbi_uc * in_near,stbi_uc * in_far,int w,int hs)
+restart_interval	src/stb_image.h	/^   int restart_interval, todo;$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:int
+rgb	src/stb_image.h	/^   int            rgb;$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:int
+rows	mosaic/src/mosaic.h	/^	unsigned int rows;$/;"	m	struct:mosaic_matrix	typeref:typename:unsigned int
+s	src/stb_image.h	/^   stbi__context *s;$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:stbi__context *
+s	src/stb_image.h	/^   stbi__context *s;$/;"	m	struct:__anon9cbf1c1d0e08	typeref:typename:stbi__context *
+scale_x	src/shape.h	/^	float scale_x;$/;"	m	struct:glue_shape	typeref:typename:float
+scale_y	src/shape.h	/^	float scale_y;$/;"	m	struct:glue_shape	typeref:typename:float
+scan_n	src/stb_image.h	/^   int scan_n, order[4];$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:int
+shape_shader	src/renderer.h	/^	unsigned int shape_shader;$/;"	m	struct:glue_renderer	typeref:typename:unsigned int
+size	src/stb_image.h	/^   stbi_uc  size[257];$/;"	m	struct:__anon9cbf1c1d0708	typeref:typename:stbi_uc[257]
+size	src/stb_image.h	/^   stbi_uc  size[288];$/;"	m	struct:__anon9cbf1c1d0b08	typeref:typename:stbi_uc[288]
+size	src/stb_image.h	/^   stbi_uc size,type,channel;$/;"	m	struct:__anon9cbf1c1d1108	typeref:typename:stbi_uc
+skip	src/stb_image.h	/^   void     (*skip)  (void *user,int n);                 \/\/ skip the next 'n' bytes, or 'unget/;"	m	struct:__anon9cbf1c1d0208	typeref:typename:void (*)(void * user,int n)
+spec_end	src/stb_image.h	/^   int            spec_end;$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:int
+spec_start	src/stb_image.h	/^   int            spec_start;$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:int
+start_x	src/stb_image.h	/^   int start_x, start_y;$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:int
+start_y	src/stb_image.h	/^   int start_x, start_y;$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:int
+stbi__DNL	src/stb_image.h	/^#define stbi__DNL(/;"	d
+stbi__EOI	src/stb_image.h	/^#define stbi__EOI(/;"	d
+stbi__SOF	src/stb_image.h	/^#define stbi__SOF(/;"	d
+stbi__SOF_progressive	src/stb_image.h	/^#define stbi__SOF_progressive(/;"	d
+stbi__SOI	src/stb_image.h	/^#define stbi__SOI(/;"	d
+stbi__SOS	src/stb_image.h	/^#define stbi__SOS(/;"	d
+stbi__YCbCr_to_RGB_row	src/stb_image.h	/^static void stbi__YCbCr_to_RGB_row(stbi_uc *out, const stbi_uc *y, const stbi_uc *pcb, const stb/;"	f	typeref:typename:void
+stbi__YCbCr_to_RGB_simd	src/stb_image.h	/^static void stbi__YCbCr_to_RGB_simd(stbi_uc *out, stbi_uc const *y, stbi_uc const *pcb, stbi_uc /;"	f	typeref:typename:void
+stbi__addsizes_valid	src/stb_image.h	/^static int stbi__addsizes_valid(int a, int b)$/;"	f	typeref:typename:int
+stbi__at_eof	src/stb_image.h	/^stbi_inline static int stbi__at_eof(stbi__context *s)$/;"	f	typeref:typename:stbi_inline int
+stbi__bit_reverse	src/stb_image.h	/^stbi_inline static int stbi__bit_reverse(int v, int bits)$/;"	f	typeref:typename:stbi_inline int
+stbi__bitcount	src/stb_image.h	/^static int stbi__bitcount(unsigned int a)$/;"	f	typeref:typename:int
+stbi__bitreverse16	src/stb_image.h	/^stbi_inline static int stbi__bitreverse16(int n)$/;"	f	typeref:typename:stbi_inline int
+stbi__blinn_8x8	src/stb_image.h	/^static stbi_uc stbi__blinn_8x8(stbi_uc x, stbi_uc y)$/;"	f	typeref:typename:stbi_uc
+stbi__bmask	src/stb_image.h	/^static const stbi__uint32 stbi__bmask[17]={0,1,3,7,15,31,63,127,255,511,1023,2047,4095,8191,1638/;"	v	typeref:typename:const stbi__uint32[17]
+stbi__bmp_data	src/stb_image.h	/^} stbi__bmp_data;$/;"	t	typeref:struct:__anon9cbf1c1d1008
+stbi__bmp_info	src/stb_image.h	/^static int stbi__bmp_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f	typeref:typename:int
+stbi__bmp_load	src/stb_image.h	/^static void *stbi__bmp_load(stbi__context *s, int *x, int *y, int *comp, int req_comp, stbi__res/;"	f	typeref:typename:void *
+stbi__bmp_parse_header	src/stb_image.h	/^static void *stbi__bmp_parse_header(stbi__context *s, stbi__bmp_data *info)$/;"	f	typeref:typename:void *
+stbi__bmp_test	src/stb_image.h	/^static int stbi__bmp_test(stbi__context *s)$/;"	f	typeref:typename:int
+stbi__bmp_test_raw	src/stb_image.h	/^static int stbi__bmp_test_raw(stbi__context *s)$/;"	f	typeref:typename:int
+stbi__build_fast_ac	src/stb_image.h	/^static void stbi__build_fast_ac(stbi__int16 *fast_ac, stbi__huffman *h)$/;"	f	typeref:typename:void
+stbi__build_huffman	src/stb_image.h	/^static int stbi__build_huffman(stbi__huffman *h, int *count)$/;"	f	typeref:typename:int
+stbi__check_png_header	src/stb_image.h	/^static int stbi__check_png_header(stbi__context *s)$/;"	f	typeref:typename:int
+stbi__clamp	src/stb_image.h	/^stbi_inline static stbi_uc stbi__clamp(int x)$/;"	f	typeref:typename:stbi_inline stbi_uc
+stbi__cleanup_jpeg	src/stb_image.h	/^static void stbi__cleanup_jpeg(stbi__jpeg *j)$/;"	f	typeref:typename:void
+stbi__compute_huffman_codes	src/stb_image.h	/^static int stbi__compute_huffman_codes(stbi__zbuf *a)$/;"	f	typeref:typename:int
+stbi__compute_transparency	src/stb_image.h	/^static int stbi__compute_transparency(stbi__png *z, stbi_uc tc[3], int out_n)$/;"	f	typeref:typename:int
+stbi__compute_transparency16	src/stb_image.h	/^static int stbi__compute_transparency16(stbi__png *z, stbi__uint16 tc[3], int out_n)$/;"	f	typeref:typename:int
+stbi__compute_y	src/stb_image.h	/^static stbi_uc stbi__compute_y(int r, int g, int b)$/;"	f	typeref:typename:stbi_uc
+stbi__compute_y_16	src/stb_image.h	/^static stbi__uint16 stbi__compute_y_16(int r, int g, int b)$/;"	f	typeref:typename:stbi__uint16
+stbi__context	src/stb_image.h	/^} stbi__context;$/;"	t	typeref:struct:__anon9cbf1c1d0308
+stbi__convert_16_to_8	src/stb_image.h	/^static stbi_uc *stbi__convert_16_to_8(stbi__uint16 *orig, int w, int h, int channels)$/;"	f	typeref:typename:stbi_uc *
+stbi__convert_8_to_16	src/stb_image.h	/^static stbi__uint16 *stbi__convert_8_to_16(stbi_uc *orig, int w, int h, int channels)$/;"	f	typeref:typename:stbi__uint16 *
+stbi__convert_format	src/stb_image.h	/^static unsigned char *stbi__convert_format(unsigned char *data, int img_n, int req_comp, unsigne/;"	f	typeref:typename:unsigned char *
+stbi__convert_format16	src/stb_image.h	/^static stbi__uint16 *stbi__convert_format16(stbi__uint16 *data, int img_n, int req_comp, unsigne/;"	f	typeref:typename:stbi__uint16 *
+stbi__copyval	src/stb_image.h	/^static void stbi__copyval(int channel,stbi_uc *dest,const stbi_uc *src)$/;"	f	typeref:typename:void
+stbi__cpuid3	src/stb_image.h	/^static int stbi__cpuid3(void)$/;"	f	typeref:typename:int
+stbi__create_png_image	src/stb_image.h	/^static int stbi__create_png_image(stbi__png *a, stbi_uc *image_data, stbi__uint32 image_data_len/;"	f	typeref:typename:int
+stbi__create_png_image_raw	src/stb_image.h	/^static int stbi__create_png_image_raw(stbi__png *a, stbi_uc *raw, stbi__uint32 raw_len, int out_/;"	f	typeref:typename:int
+stbi__de_iphone	src/stb_image.h	/^static void stbi__de_iphone(stbi__png *z)$/;"	f	typeref:typename:void
+stbi__de_iphone_flag	src/stb_image.h	/^static int stbi__de_iphone_flag = 0;$/;"	v	typeref:typename:int
+stbi__decode_jpeg_header	src/stb_image.h	/^static int stbi__decode_jpeg_header(stbi__jpeg *z, int scan)$/;"	f	typeref:typename:int
+stbi__decode_jpeg_image	src/stb_image.h	/^static int stbi__decode_jpeg_image(stbi__jpeg *j)$/;"	f	typeref:typename:int
+stbi__depth_scale_table	src/stb_image.h	/^static const stbi_uc stbi__depth_scale_table[9] = { 0, 0xff, 0x55, 0, 0x11, 0,0,0, 0x01 };$/;"	v	typeref:typename:const stbi_uc[9]
+stbi__div16	src/stb_image.h	/^#define stbi__div16(/;"	d
+stbi__div4	src/stb_image.h	/^#define stbi__div4(/;"	d
+stbi__do_png	src/stb_image.h	/^static void *stbi__do_png(stbi__png *p, int *x, int *y, int *n, int req_comp, stbi__result_info /;"	f	typeref:typename:void *
+stbi__do_zlib	src/stb_image.h	/^static int stbi__do_zlib(stbi__zbuf *a, char *obuf, int olen, int exp, int parse_header)$/;"	f	typeref:typename:int
+stbi__err	src/stb_image.h	/^   #define stbi__err(/;"	d
+stbi__err	src/stb_image.h	/^static int stbi__err(const char *str)$/;"	f	typeref:typename:int
+stbi__errpf	src/stb_image.h	/^#define stbi__errpf(/;"	d
+stbi__errpuc	src/stb_image.h	/^#define stbi__errpuc(/;"	d
+stbi__expand_png_palette	src/stb_image.h	/^static int stbi__expand_png_palette(stbi__png *a, stbi_uc *palette, int len, int pal_img_n)$/;"	f	typeref:typename:int
+stbi__extend_receive	src/stb_image.h	/^stbi_inline static int stbi__extend_receive(stbi__jpeg *j, int n)$/;"	f	typeref:typename:stbi_inline int
+stbi__f2f	src/stb_image.h	/^#define stbi__f2f(/;"	d
+stbi__fill_bits	src/stb_image.h	/^static void stbi__fill_bits(stbi__zbuf *z)$/;"	f	typeref:typename:void
+stbi__float2fixed	src/stb_image.h	/^#define stbi__float2fixed(/;"	d
+stbi__float2int	src/stb_image.h	/^#define stbi__float2int(/;"	d
+stbi__float_postprocess	src/stb_image.h	/^static void stbi__float_postprocess(float *result, int *x, int *y, int *comp, int req_comp)$/;"	f	typeref:typename:void
+stbi__fopen	src/stb_image.h	/^static FILE *stbi__fopen(char const *filename, char const *mode)$/;"	f	typeref:typename:FILE *
+stbi__free_jpeg_components	src/stb_image.h	/^static int stbi__free_jpeg_components(stbi__jpeg *z, int ncomp, int why)$/;"	f	typeref:typename:int
+stbi__fsh	src/stb_image.h	/^#define stbi__fsh(/;"	d
+stbi__g_failure_reason	src/stb_image.h	/^const char *stbi__g_failure_reason;$/;"	v	typeref:typename:STBI_THREAD_LOCAL const char *
+stbi__get16be	src/stb_image.h	/^static int stbi__get16be(stbi__context *s)$/;"	f	typeref:typename:int
+stbi__get16le	src/stb_image.h	/^static int stbi__get16le(stbi__context *s)$/;"	f	typeref:typename:int
+stbi__get32be	src/stb_image.h	/^static stbi__uint32 stbi__get32be(stbi__context *s)$/;"	f	typeref:typename:stbi__uint32
+stbi__get32le	src/stb_image.h	/^static stbi__uint32 stbi__get32le(stbi__context *s)$/;"	f	typeref:typename:stbi__uint32
+stbi__get8	src/stb_image.h	/^stbi_inline static stbi_uc stbi__get8(stbi__context *s)$/;"	f	typeref:typename:stbi_inline stbi_uc
+stbi__get_chunk_header	src/stb_image.h	/^static stbi__pngchunk stbi__get_chunk_header(stbi__context *s)$/;"	f	typeref:typename:stbi__pngchunk
+stbi__get_marker	src/stb_image.h	/^static stbi_uc stbi__get_marker(stbi__jpeg *j)$/;"	f	typeref:typename:stbi_uc
+stbi__getn	src/stb_image.h	/^static int stbi__getn(stbi__context *s, stbi_uc *buffer, int n)$/;"	f	typeref:typename:int
+stbi__gif	src/stb_image.h	/^} stbi__gif;$/;"	t	typeref:struct:__anon9cbf1c1d1308
+stbi__gif_header	src/stb_image.h	/^static int stbi__gif_header(stbi__context *s, stbi__gif *g, int *comp, int is_info)$/;"	f	typeref:typename:int
+stbi__gif_info	src/stb_image.h	/^static int stbi__gif_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f	typeref:typename:int
+stbi__gif_info_raw	src/stb_image.h	/^static int stbi__gif_info_raw(stbi__context *s, int *x, int *y, int *comp)$/;"	f	typeref:typename:int
+stbi__gif_load	src/stb_image.h	/^static void *stbi__gif_load(stbi__context *s, int *x, int *y, int *comp, int req_comp, stbi__res/;"	f	typeref:typename:void *
+stbi__gif_load_next	src/stb_image.h	/^static stbi_uc *stbi__gif_load_next(stbi__context *s, stbi__gif *g, int *comp, int req_comp, stb/;"	f	typeref:typename:stbi_uc *
+stbi__gif_lzw	src/stb_image.h	/^} stbi__gif_lzw;$/;"	t	typeref:struct:__anon9cbf1c1d1208
+stbi__gif_parse_colortable	src/stb_image.h	/^static void stbi__gif_parse_colortable(stbi__context *s, stbi_uc pal[256][4], int num_entries, i/;"	f	typeref:typename:void
+stbi__gif_test	src/stb_image.h	/^static int stbi__gif_test(stbi__context *s)$/;"	f	typeref:typename:int
+stbi__gif_test_raw	src/stb_image.h	/^static int stbi__gif_test_raw(stbi__context *s)$/;"	f	typeref:typename:int
+stbi__grow_buffer_unsafe	src/stb_image.h	/^static void stbi__grow_buffer_unsafe(stbi__jpeg *j)$/;"	f	typeref:typename:void
+stbi__h2l_gamma_i	src/stb_image.h	/^static float stbi__h2l_gamma_i=1.0f\/2.2f, stbi__h2l_scale_i=1.0f;$/;"	v	typeref:typename:float
+stbi__h2l_scale_i	src/stb_image.h	/^static float stbi__h2l_gamma_i=1.0f\/2.2f, stbi__h2l_scale_i=1.0f;$/;"	v	typeref:typename:float
+stbi__hdr_convert	src/stb_image.h	/^static void stbi__hdr_convert(float *output, stbi_uc *input, int req_comp)$/;"	f	typeref:typename:void
+stbi__hdr_gettoken	src/stb_image.h	/^static char *stbi__hdr_gettoken(stbi__context *z, char *buffer)$/;"	f	typeref:typename:char *
+stbi__hdr_info	src/stb_image.h	/^static int stbi__hdr_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f	typeref:typename:int
+stbi__hdr_load	src/stb_image.h	/^static float *stbi__hdr_load(stbi__context *s, int *x, int *y, int *comp, int req_comp, stbi__re/;"	f	typeref:typename:float *
+stbi__hdr_test	src/stb_image.h	/^static int stbi__hdr_test(stbi__context* s)$/;"	f	typeref:typename:int
+stbi__hdr_test_core	src/stb_image.h	/^static int stbi__hdr_test_core(stbi__context *s, const char *signature)$/;"	f	typeref:typename:int
+stbi__hdr_to_ldr	src/stb_image.h	/^static stbi_uc *stbi__hdr_to_ldr(float   *data, int x, int y, int comp)$/;"	f	typeref:typename:stbi_uc *
+stbi__high_bit	src/stb_image.h	/^static int stbi__high_bit(unsigned int z)$/;"	f	typeref:typename:int
+stbi__huffman	src/stb_image.h	/^} stbi__huffman;$/;"	t	typeref:struct:__anon9cbf1c1d0708
+stbi__idct_block	src/stb_image.h	/^static void stbi__idct_block(stbi_uc *out, int out_stride, short data[64])$/;"	f	typeref:typename:void
+stbi__idct_simd	src/stb_image.h	/^static void stbi__idct_simd(stbi_uc *out, int out_stride, short data[64])$/;"	f	typeref:typename:void
+stbi__info_main	src/stb_image.h	/^static int stbi__info_main(stbi__context *s, int *x, int *y, int *comp)$/;"	f	typeref:typename:int
+stbi__int16	src/stb_image.h	/^typedef   signed short stbi__int16;$/;"	t	typeref:typename:signed short
+stbi__int16	src/stb_image.h	/^typedef int16_t  stbi__int16;$/;"	t	typeref:typename:int16_t
+stbi__int32	src/stb_image.h	/^typedef   signed int   stbi__int32;$/;"	t	typeref:typename:signed int
+stbi__int32	src/stb_image.h	/^typedef int32_t  stbi__int32;$/;"	t	typeref:typename:int32_t
+stbi__is_16_main	src/stb_image.h	/^static int stbi__is_16_main(stbi__context *s)$/;"	f	typeref:typename:int
+stbi__jbias	src/stb_image.h	/^static const int stbi__jbias[16] = {0,-1,-3,-7,-15,-31,-63,-127,-255,-511,-1023,-2047,-4095,-819/;"	v	typeref:typename:const int[16]
+stbi__jpeg	src/stb_image.h	/^} stbi__jpeg;$/;"	t	typeref:struct:__anon9cbf1c1d0808
+stbi__jpeg_decode_block	src/stb_image.h	/^static int stbi__jpeg_decode_block(stbi__jpeg *j, short data[64], stbi__huffman *hdc, stbi__huff/;"	f	typeref:typename:int
+stbi__jpeg_decode_block_prog_ac	src/stb_image.h	/^static int stbi__jpeg_decode_block_prog_ac(stbi__jpeg *j, short data[64], stbi__huffman *hac, st/;"	f	typeref:typename:int
+stbi__jpeg_decode_block_prog_dc	src/stb_image.h	/^static int stbi__jpeg_decode_block_prog_dc(stbi__jpeg *j, short data[64], stbi__huffman *hdc, in/;"	f	typeref:typename:int
+stbi__jpeg_dequantize	src/stb_image.h	/^static void stbi__jpeg_dequantize(short *data, stbi__uint16 *dequant)$/;"	f	typeref:typename:void
+stbi__jpeg_dezigzag	src/stb_image.h	/^static const stbi_uc stbi__jpeg_dezigzag[64+15] =$/;"	v	typeref:typename:const stbi_uc[]
+stbi__jpeg_finish	src/stb_image.h	/^static void stbi__jpeg_finish(stbi__jpeg *z)$/;"	f	typeref:typename:void
+stbi__jpeg_get_bit	src/stb_image.h	/^stbi_inline static int stbi__jpeg_get_bit(stbi__jpeg *j)$/;"	f	typeref:typename:stbi_inline int
+stbi__jpeg_get_bits	src/stb_image.h	/^stbi_inline static int stbi__jpeg_get_bits(stbi__jpeg *j, int n)$/;"	f	typeref:typename:stbi_inline int
+stbi__jpeg_huff_decode	src/stb_image.h	/^stbi_inline static int stbi__jpeg_huff_decode(stbi__jpeg *j, stbi__huffman *h)$/;"	f	typeref:typename:stbi_inline int
+stbi__jpeg_info	src/stb_image.h	/^static int stbi__jpeg_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f	typeref:typename:int
+stbi__jpeg_info_raw	src/stb_image.h	/^static int stbi__jpeg_info_raw(stbi__jpeg *j, int *x, int *y, int *comp)$/;"	f	typeref:typename:int
+stbi__jpeg_load	src/stb_image.h	/^static void *stbi__jpeg_load(stbi__context *s, int *x, int *y, int *comp, int req_comp, stbi__re/;"	f	typeref:typename:void *
+stbi__jpeg_reset	src/stb_image.h	/^static void stbi__jpeg_reset(stbi__jpeg *j)$/;"	f	typeref:typename:void
+stbi__jpeg_test	src/stb_image.h	/^static int stbi__jpeg_test(stbi__context *s)$/;"	f	typeref:typename:int
+stbi__l2h_gamma	src/stb_image.h	/^static float stbi__l2h_gamma=2.2f, stbi__l2h_scale=1.0f;$/;"	v	typeref:typename:float
+stbi__l2h_scale	src/stb_image.h	/^static float stbi__l2h_gamma=2.2f, stbi__l2h_scale=1.0f;$/;"	v	typeref:typename:float
+stbi__ldr_to_hdr	src/stb_image.h	/^static float   *stbi__ldr_to_hdr(stbi_uc *data, int x, int y, int comp)$/;"	f	typeref:typename:float *
+stbi__load_and_postprocess_16bit	src/stb_image.h	/^static stbi__uint16 *stbi__load_and_postprocess_16bit(stbi__context *s, int *x, int *y, int *com/;"	f	typeref:typename:stbi__uint16 *
+stbi__load_and_postprocess_8bit	src/stb_image.h	/^static unsigned char *stbi__load_and_postprocess_8bit(stbi__context *s, int *x, int *y, int *com/;"	f	typeref:typename:unsigned char *
+stbi__load_gif_main	src/stb_image.h	/^static void *stbi__load_gif_main(stbi__context *s, int **delays, int *x, int *y, int *z, int *co/;"	f	typeref:typename:void *
+stbi__load_main	src/stb_image.h	/^static void *stbi__load_main(stbi__context *s, int *x, int *y, int *comp, int req_comp, stbi__re/;"	f	typeref:typename:void *
+stbi__loadf_main	src/stb_image.h	/^static float *stbi__loadf_main(stbi__context *s, int *x, int *y, int *comp, int req_comp)$/;"	f	typeref:typename:float *
+stbi__mad2sizes_valid	src/stb_image.h	/^static int stbi__mad2sizes_valid(int a, int b, int add)$/;"	f	typeref:typename:int
+stbi__mad3sizes_valid	src/stb_image.h	/^static int stbi__mad3sizes_valid(int a, int b, int c, int add)$/;"	f	typeref:typename:int
+stbi__mad4sizes_valid	src/stb_image.h	/^static int stbi__mad4sizes_valid(int a, int b, int c, int d, int add)$/;"	f	typeref:typename:int
+stbi__malloc	src/stb_image.h	/^static void *stbi__malloc(size_t size)$/;"	f	typeref:typename:void *
+stbi__malloc_mad2	src/stb_image.h	/^static void *stbi__malloc_mad2(int a, int b, int add)$/;"	f	typeref:typename:void *
+stbi__malloc_mad3	src/stb_image.h	/^static void *stbi__malloc_mad3(int a, int b, int c, int add)$/;"	f	typeref:typename:void *
+stbi__malloc_mad4	src/stb_image.h	/^static void *stbi__malloc_mad4(int a, int b, int c, int d, int add)$/;"	f	typeref:typename:void *
+stbi__mul2sizes_valid	src/stb_image.h	/^static int stbi__mul2sizes_valid(int a, int b)$/;"	f	typeref:typename:int
+stbi__out_gif_code	src/stb_image.h	/^static void stbi__out_gif_code(stbi__gif *g, stbi__uint16 code)$/;"	f	typeref:typename:void
+stbi__paeth	src/stb_image.h	/^static int stbi__paeth(int a, int b, int c)$/;"	f	typeref:typename:int
+stbi__parse_entropy_coded_data	src/stb_image.h	/^static int stbi__parse_entropy_coded_data(stbi__jpeg *z)$/;"	f	typeref:typename:int
+stbi__parse_huffman_block	src/stb_image.h	/^static int stbi__parse_huffman_block(stbi__zbuf *a)$/;"	f	typeref:typename:int
+stbi__parse_png_file	src/stb_image.h	/^static int stbi__parse_png_file(stbi__png *z, int scan, int req_comp)$/;"	f	typeref:typename:int
+stbi__parse_uncompressed_block	src/stb_image.h	/^static int stbi__parse_uncompressed_block(stbi__zbuf *a)$/;"	f	typeref:typename:int
+stbi__parse_zlib	src/stb_image.h	/^static int stbi__parse_zlib(stbi__zbuf *a, int parse_header)$/;"	f	typeref:typename:int
+stbi__parse_zlib_header	src/stb_image.h	/^static int stbi__parse_zlib_header(stbi__zbuf *a)$/;"	f	typeref:typename:int
+stbi__pic_info	src/stb_image.h	/^static int stbi__pic_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f	typeref:typename:int
+stbi__pic_is4	src/stb_image.h	/^static int stbi__pic_is4(stbi__context *s,const char *str)$/;"	f	typeref:typename:int
+stbi__pic_load	src/stb_image.h	/^static void *stbi__pic_load(stbi__context *s,int *px,int *py,int *comp,int req_comp, stbi__resul/;"	f	typeref:typename:void *
+stbi__pic_load_core	src/stb_image.h	/^static stbi_uc *stbi__pic_load_core(stbi__context *s,int width,int height,int *comp, stbi_uc *re/;"	f	typeref:typename:stbi_uc *
+stbi__pic_packet	src/stb_image.h	/^} stbi__pic_packet;$/;"	t	typeref:struct:__anon9cbf1c1d1108
+stbi__pic_test	src/stb_image.h	/^static int stbi__pic_test(stbi__context *s)$/;"	f	typeref:typename:int
+stbi__pic_test_core	src/stb_image.h	/^static int stbi__pic_test_core(stbi__context *s)$/;"	f	typeref:typename:int
+stbi__png	src/stb_image.h	/^} stbi__png;$/;"	t	typeref:struct:__anon9cbf1c1d0e08
+stbi__png_info	src/stb_image.h	/^static int stbi__png_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f	typeref:typename:int
+stbi__png_info_raw	src/stb_image.h	/^static int stbi__png_info_raw(stbi__png *p, int *x, int *y, int *comp)$/;"	f	typeref:typename:int
+stbi__png_is16	src/stb_image.h	/^static int stbi__png_is16(stbi__context *s)$/;"	f	typeref:typename:int
+stbi__png_load	src/stb_image.h	/^static void *stbi__png_load(stbi__context *s, int *x, int *y, int *comp, int req_comp, stbi__res/;"	f	typeref:typename:void *
+stbi__png_test	src/stb_image.h	/^static int stbi__png_test(stbi__context *s)$/;"	f	typeref:typename:int
+stbi__pngchunk	src/stb_image.h	/^} stbi__pngchunk;$/;"	t	typeref:struct:__anon9cbf1c1d0d08
+stbi__pnm_getinteger	src/stb_image.h	/^static int      stbi__pnm_getinteger(stbi__context *s, char *c)$/;"	f	typeref:typename:int
+stbi__pnm_info	src/stb_image.h	/^static int      stbi__pnm_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f	typeref:typename:int
+stbi__pnm_isdigit	src/stb_image.h	/^static int      stbi__pnm_isdigit(char c)$/;"	f	typeref:typename:int
+stbi__pnm_isspace	src/stb_image.h	/^static int      stbi__pnm_isspace(char c)$/;"	f	typeref:typename:int
+stbi__pnm_load	src/stb_image.h	/^static void *stbi__pnm_load(stbi__context *s, int *x, int *y, int *comp, int req_comp, stbi__res/;"	f	typeref:typename:void *
+stbi__pnm_skip_whitespace	src/stb_image.h	/^static void     stbi__pnm_skip_whitespace(stbi__context *s, char *c)$/;"	f	typeref:typename:void
+stbi__pnm_test	src/stb_image.h	/^static int      stbi__pnm_test(stbi__context *s)$/;"	f	typeref:typename:int
+stbi__process_frame_header	src/stb_image.h	/^static int stbi__process_frame_header(stbi__jpeg *z, int scan)$/;"	f	typeref:typename:int
+stbi__process_gif_raster	src/stb_image.h	/^static stbi_uc *stbi__process_gif_raster(stbi__context *s, stbi__gif *g)$/;"	f	typeref:typename:stbi_uc *
+stbi__process_marker	src/stb_image.h	/^static int stbi__process_marker(stbi__jpeg *z, int m)$/;"	f	typeref:typename:int
+stbi__process_scan_header	src/stb_image.h	/^static int stbi__process_scan_header(stbi__jpeg *z)$/;"	f	typeref:typename:int
+stbi__psd_decode_rle	src/stb_image.h	/^static int stbi__psd_decode_rle(stbi__context *s, stbi_uc *p, int pixelCount)$/;"	f	typeref:typename:int
+stbi__psd_info	src/stb_image.h	/^static int stbi__psd_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f	typeref:typename:int
+stbi__psd_is16	src/stb_image.h	/^static int stbi__psd_is16(stbi__context *s)$/;"	f	typeref:typename:int
+stbi__psd_load	src/stb_image.h	/^static void *stbi__psd_load(stbi__context *s, int *x, int *y, int *comp, int req_comp, stbi__res/;"	f	typeref:typename:void *
+stbi__psd_test	src/stb_image.h	/^static int stbi__psd_test(stbi__context *s)$/;"	f	typeref:typename:int
+stbi__readval	src/stb_image.h	/^static stbi_uc *stbi__readval(stbi__context *s, int channel, stbi_uc *dest)$/;"	f	typeref:typename:stbi_uc *
+stbi__refill_buffer	src/stb_image.h	/^static void stbi__refill_buffer(stbi__context *s)$/;"	f	typeref:typename:void
+stbi__resample	src/stb_image.h	/^} stbi__resample;$/;"	t	typeref:struct:__anon9cbf1c1d0a08
+stbi__resample_row_generic	src/stb_image.h	/^static stbi_uc *stbi__resample_row_generic(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, int /;"	f	typeref:typename:stbi_uc *
+stbi__resample_row_h_2	src/stb_image.h	/^static stbi_uc*  stbi__resample_row_h_2(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, int w, /;"	f	typeref:typename:stbi_uc *
+stbi__resample_row_hv_2	src/stb_image.h	/^static stbi_uc *stbi__resample_row_hv_2(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, int w, /;"	f	typeref:typename:stbi_uc *
+stbi__resample_row_hv_2_simd	src/stb_image.h	/^static stbi_uc *stbi__resample_row_hv_2_simd(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, in/;"	f	typeref:typename:stbi_uc *
+stbi__resample_row_v_2	src/stb_image.h	/^static stbi_uc* stbi__resample_row_v_2(stbi_uc *out, stbi_uc *in_near, stbi_uc *in_far, int w, i/;"	f	typeref:typename:stbi_uc *
+stbi__result_info	src/stb_image.h	/^} stbi__result_info;$/;"	t	typeref:struct:__anon9cbf1c1d0508
+stbi__rewind	src/stb_image.h	/^static void stbi__rewind(stbi__context *s)$/;"	f	typeref:typename:void
+stbi__setup_jpeg	src/stb_image.h	/^static void stbi__setup_jpeg(stbi__jpeg *j)$/;"	f	typeref:typename:void
+stbi__shiftsigned	src/stb_image.h	/^static int stbi__shiftsigned(unsigned int v, int shift, int bits)$/;"	f	typeref:typename:int
+stbi__skip	src/stb_image.h	/^static void stbi__skip(stbi__context *s, int n)$/;"	f	typeref:typename:void
+stbi__sse2_available	src/stb_image.h	/^static int stbi__sse2_available(void)$/;"	f	typeref:typename:int
+stbi__start_callbacks	src/stb_image.h	/^static void stbi__start_callbacks(stbi__context *s, stbi_io_callbacks *c, void *user)$/;"	f	typeref:typename:void
+stbi__start_file	src/stb_image.h	/^static void stbi__start_file(stbi__context *s, FILE *f)$/;"	f	typeref:typename:void
+stbi__start_mem	src/stb_image.h	/^static void stbi__start_mem(stbi__context *s, stbi_uc const *buffer, int len)$/;"	f	typeref:typename:void
+stbi__stdio_callbacks	src/stb_image.h	/^static stbi_io_callbacks stbi__stdio_callbacks =$/;"	v	typeref:typename:stbi_io_callbacks
+stbi__stdio_eof	src/stb_image.h	/^static int stbi__stdio_eof(void *user)$/;"	f	typeref:typename:int
+stbi__stdio_read	src/stb_image.h	/^static int stbi__stdio_read(void *user, char *data, int size)$/;"	f	typeref:typename:int
+stbi__stdio_skip	src/stb_image.h	/^static void stbi__stdio_skip(void *user, int n)$/;"	f	typeref:typename:void
+stbi__tga_get_comp	src/stb_image.h	/^static int stbi__tga_get_comp(int bits_per_pixel, int is_grey, int* is_rgb16)$/;"	f	typeref:typename:int
+stbi__tga_info	src/stb_image.h	/^static int stbi__tga_info(stbi__context *s, int *x, int *y, int *comp)$/;"	f	typeref:typename:int
+stbi__tga_load	src/stb_image.h	/^static void *stbi__tga_load(stbi__context *s, int *x, int *y, int *comp, int req_comp, stbi__res/;"	f	typeref:typename:void *
+stbi__tga_read_rgb16	src/stb_image.h	/^static void stbi__tga_read_rgb16(stbi__context *s, stbi_uc* out)$/;"	f	typeref:typename:void
+stbi__tga_test	src/stb_image.h	/^static int stbi__tga_test(stbi__context *s)$/;"	f	typeref:typename:int
+stbi__uint16	src/stb_image.h	/^typedef uint16_t stbi__uint16;$/;"	t	typeref:typename:uint16_t
+stbi__uint16	src/stb_image.h	/^typedef unsigned short stbi__uint16;$/;"	t	typeref:typename:unsigned short
+stbi__uint32	src/stb_image.h	/^typedef uint32_t stbi__uint32;$/;"	t	typeref:typename:uint32_t
+stbi__uint32	src/stb_image.h	/^typedef unsigned int   stbi__uint32;$/;"	t	typeref:typename:unsigned int
+stbi__unpremultiply_on_load	src/stb_image.h	/^static int stbi__unpremultiply_on_load = 0;$/;"	v	typeref:typename:int
+stbi__vertical_flip	src/stb_image.h	/^static void stbi__vertical_flip(void *image, int w, int h, int bytes_per_pixel)$/;"	f	typeref:typename:void
+stbi__vertical_flip_slices	src/stb_image.h	/^static void stbi__vertical_flip_slices(void *image, int w, int h, int z, int bytes_per_pixel)$/;"	f	typeref:typename:void
+stbi__vertically_flip_on_load	src/stb_image.h	/^#define stbi__vertically_flip_on_load /;"	d
+stbi__vertically_flip_on_load_global	src/stb_image.h	/^static int stbi__vertically_flip_on_load_global = 0;$/;"	v	typeref:typename:int
+stbi__vertically_flip_on_load_local	src/stb_image.h	/^static STBI_THREAD_LOCAL int stbi__vertically_flip_on_load_local, stbi__vertically_flip_on_load_/;"	v	typeref:typename:STBI_THREAD_LOCAL int
+stbi__vertically_flip_on_load_set	src/stb_image.h	/^static STBI_THREAD_LOCAL int stbi__vertically_flip_on_load_local, stbi__vertically_flip_on_load_/;"	v	typeref:typename:STBI_THREAD_LOCAL int
+stbi__zbuf	src/stb_image.h	/^} stbi__zbuf;$/;"	t	typeref:struct:__anon9cbf1c1d0c08
+stbi__zbuild_huffman	src/stb_image.h	/^static int stbi__zbuild_huffman(stbi__zhuffman *z, const stbi_uc *sizelist, int num)$/;"	f	typeref:typename:int
+stbi__zdefault_distance	src/stb_image.h	/^static const stbi_uc stbi__zdefault_distance[32] =$/;"	v	typeref:typename:const stbi_uc[32]
+stbi__zdefault_length	src/stb_image.h	/^static const stbi_uc stbi__zdefault_length[288] =$/;"	v	typeref:typename:const stbi_uc[288]
+stbi__zdist_base	src/stb_image.h	/^static const int stbi__zdist_base[32] = { 1,2,3,4,5,7,9,13,17,25,33,49,65,97,129,193,$/;"	v	typeref:typename:const int[32]
+stbi__zdist_extra	src/stb_image.h	/^static const int stbi__zdist_extra[32] =$/;"	v	typeref:typename:const int[32]
+stbi__zeof	src/stb_image.h	/^stbi_inline static int stbi__zeof(stbi__zbuf *z)$/;"	f	typeref:typename:stbi_inline int
+stbi__zexpand	src/stb_image.h	/^static int stbi__zexpand(stbi__zbuf *z, char *zout, int n)  \/\/ need to make room for n bytes$/;"	f	typeref:typename:int
+stbi__zget8	src/stb_image.h	/^stbi_inline static stbi_uc stbi__zget8(stbi__zbuf *z)$/;"	f	typeref:typename:stbi_inline stbi_uc
+stbi__zhuffman	src/stb_image.h	/^} stbi__zhuffman;$/;"	t	typeref:struct:__anon9cbf1c1d0b08
+stbi__zhuffman_decode	src/stb_image.h	/^stbi_inline static int stbi__zhuffman_decode(stbi__zbuf *a, stbi__zhuffman *z)$/;"	f	typeref:typename:stbi_inline int
+stbi__zhuffman_decode_slowpath	src/stb_image.h	/^static int stbi__zhuffman_decode_slowpath(stbi__zbuf *a, stbi__zhuffman *z)$/;"	f	typeref:typename:int
+stbi__zlength_base	src/stb_image.h	/^static const int stbi__zlength_base[31] = {$/;"	v	typeref:typename:const int[31]
+stbi__zlength_extra	src/stb_image.h	/^static const int stbi__zlength_extra[31]=$/;"	v	typeref:typename:const int[31]
+stbi__zreceive	src/stb_image.h	/^stbi_inline static unsigned int stbi__zreceive(stbi__zbuf *z, int n)$/;"	f	typeref:typename:stbi_inline unsigned int
+stbi_convert_iphone_png_to_rgb	src/stb_image.h	/^STBIDEF void stbi_convert_iphone_png_to_rgb(int flag_true_if_should_convert)$/;"	f	typeref:typename:STBIDEF void
+stbi_convert_wchar_to_utf8	src/stb_image.h	/^STBIDEF int stbi_convert_wchar_to_utf8(char *buffer, size_t bufferlen, const wchar_t* input)$/;"	f	typeref:typename:STBIDEF int
+stbi_failure_reason	src/stb_image.h	/^STBIDEF const char *stbi_failure_reason(void)$/;"	f	typeref:typename:STBIDEF const char *
+stbi_hdr_to_ldr_gamma	src/stb_image.h	/^STBIDEF void   stbi_hdr_to_ldr_gamma(float gamma) { stbi__h2l_gamma_i = 1\/gamma; }$/;"	f	typeref:typename:STBIDEF void
+stbi_hdr_to_ldr_scale	src/stb_image.h	/^STBIDEF void   stbi_hdr_to_ldr_scale(float scale) { stbi__h2l_scale_i = 1\/scale; }$/;"	f	typeref:typename:STBIDEF void
+stbi_image_free	src/stb_image.h	/^STBIDEF void stbi_image_free(void *retval_from_stbi_load)$/;"	f	typeref:typename:STBIDEF void
+stbi_info	src/stb_image.h	/^STBIDEF int stbi_info(char const *filename, int *x, int *y, int *comp)$/;"	f	typeref:typename:STBIDEF int
+stbi_info_from_callbacks	src/stb_image.h	/^STBIDEF int stbi_info_from_callbacks(stbi_io_callbacks const *c, void *user, int *x, int *y, int/;"	f	typeref:typename:STBIDEF int
+stbi_info_from_file	src/stb_image.h	/^STBIDEF int stbi_info_from_file(FILE *f, int *x, int *y, int *comp)$/;"	f	typeref:typename:STBIDEF int
+stbi_info_from_memory	src/stb_image.h	/^STBIDEF int stbi_info_from_memory(stbi_uc const *buffer, int len, int *x, int *y, int *comp)$/;"	f	typeref:typename:STBIDEF int
+stbi_inline	src/stb_image.h	/^   #define stbi_inline /;"	d
+stbi_inline	src/stb_image.h	/^   #define stbi_inline$/;"	d
+stbi_io_callbacks	src/stb_image.h	/^} stbi_io_callbacks;$/;"	t	typeref:struct:__anon9cbf1c1d0208
+stbi_is_16_bit	src/stb_image.h	/^STBIDEF int stbi_is_16_bit(char const *filename)$/;"	f	typeref:typename:STBIDEF int
+stbi_is_16_bit_from_callbacks	src/stb_image.h	/^STBIDEF int stbi_is_16_bit_from_callbacks(stbi_io_callbacks const *c, void *user)$/;"	f	typeref:typename:STBIDEF int
+stbi_is_16_bit_from_file	src/stb_image.h	/^STBIDEF int stbi_is_16_bit_from_file(FILE *f)$/;"	f	typeref:typename:STBIDEF int
+stbi_is_16_bit_from_memory	src/stb_image.h	/^STBIDEF int stbi_is_16_bit_from_memory(stbi_uc const *buffer, int len)$/;"	f	typeref:typename:STBIDEF int
+stbi_is_hdr	src/stb_image.h	/^STBIDEF int      stbi_is_hdr          (char const *filename)$/;"	f	typeref:typename:STBIDEF int
+stbi_is_hdr_from_callbacks	src/stb_image.h	/^STBIDEF int      stbi_is_hdr_from_callbacks(stbi_io_callbacks const *clbk, void *user)$/;"	f	typeref:typename:STBIDEF int
+stbi_is_hdr_from_file	src/stb_image.h	/^STBIDEF int stbi_is_hdr_from_file(FILE *f)$/;"	f	typeref:typename:STBIDEF int
+stbi_is_hdr_from_memory	src/stb_image.h	/^STBIDEF int stbi_is_hdr_from_memory(stbi_uc const *buffer, int len)$/;"	f	typeref:typename:STBIDEF int
+stbi_ldr_to_hdr_gamma	src/stb_image.h	/^STBIDEF void   stbi_ldr_to_hdr_gamma(float gamma) { stbi__l2h_gamma = gamma; }$/;"	f	typeref:typename:STBIDEF void
+stbi_ldr_to_hdr_scale	src/stb_image.h	/^STBIDEF void   stbi_ldr_to_hdr_scale(float scale) { stbi__l2h_scale = scale; }$/;"	f	typeref:typename:STBIDEF void
+stbi_load	src/stb_image.h	/^STBIDEF stbi_uc *stbi_load(char const *filename, int *x, int *y, int *comp, int req_comp)$/;"	f	typeref:typename:STBIDEF stbi_uc *
+stbi_load_16	src/stb_image.h	/^STBIDEF stbi_us *stbi_load_16(char const *filename, int *x, int *y, int *comp, int req_comp)$/;"	f	typeref:typename:STBIDEF stbi_us *
+stbi_load_16_from_callbacks	src/stb_image.h	/^STBIDEF stbi_us *stbi_load_16_from_callbacks(stbi_io_callbacks const *clbk, void *user, int *x, /;"	f	typeref:typename:STBIDEF stbi_us *
+stbi_load_16_from_memory	src/stb_image.h	/^STBIDEF stbi_us *stbi_load_16_from_memory(stbi_uc const *buffer, int len, int *x, int *y, int *c/;"	f	typeref:typename:STBIDEF stbi_us *
+stbi_load_from_callbacks	src/stb_image.h	/^STBIDEF stbi_uc *stbi_load_from_callbacks(stbi_io_callbacks const *clbk, void *user, int *x, int/;"	f	typeref:typename:STBIDEF stbi_uc *
+stbi_load_from_file	src/stb_image.h	/^STBIDEF stbi_uc *stbi_load_from_file(FILE *f, int *x, int *y, int *comp, int req_comp)$/;"	f	typeref:typename:STBIDEF stbi_uc *
+stbi_load_from_file_16	src/stb_image.h	/^STBIDEF stbi__uint16 *stbi_load_from_file_16(FILE *f, int *x, int *y, int *comp, int req_comp)$/;"	f	typeref:typename:STBIDEF stbi__uint16 *
+stbi_load_from_memory	src/stb_image.h	/^STBIDEF stbi_uc *stbi_load_from_memory(stbi_uc const *buffer, int len, int *x, int *y, int *comp/;"	f	typeref:typename:STBIDEF stbi_uc *
+stbi_load_gif_from_memory	src/stb_image.h	/^STBIDEF stbi_uc *stbi_load_gif_from_memory(stbi_uc const *buffer, int len, int **delays, int *x,/;"	f	typeref:typename:STBIDEF stbi_uc *
+stbi_loadf	src/stb_image.h	/^STBIDEF float *stbi_loadf(char const *filename, int *x, int *y, int *comp, int req_comp)$/;"	f	typeref:typename:STBIDEF float *
+stbi_loadf_from_callbacks	src/stb_image.h	/^STBIDEF float *stbi_loadf_from_callbacks(stbi_io_callbacks const *clbk, void *user, int *x, int /;"	f	typeref:typename:STBIDEF float *
+stbi_loadf_from_file	src/stb_image.h	/^STBIDEF float *stbi_loadf_from_file(FILE *f, int *x, int *y, int *comp, int req_comp)$/;"	f	typeref:typename:STBIDEF float *
+stbi_loadf_from_memory	src/stb_image.h	/^STBIDEF float *stbi_loadf_from_memory(stbi_uc const *buffer, int len, int *x, int *y, int *comp,/;"	f	typeref:typename:STBIDEF float *
+stbi_lrot	src/stb_image.h	/^   #define stbi_lrot(/;"	d
+stbi_set_flip_vertically_on_load	src/stb_image.h	/^STBIDEF void stbi_set_flip_vertically_on_load(int flag_true_if_should_flip)$/;"	f	typeref:typename:STBIDEF void
+stbi_set_flip_vertically_on_load_thread	src/stb_image.h	/^STBIDEF void stbi_set_flip_vertically_on_load_thread(int flag_true_if_should_flip)$/;"	f	typeref:typename:STBIDEF void
+stbi_set_unpremultiply_on_load	src/stb_image.h	/^STBIDEF void stbi_set_unpremultiply_on_load(int flag_true_if_should_unpremultiply)$/;"	f	typeref:typename:STBIDEF void
+stbi_uc	src/stb_image.h	/^typedef unsigned char stbi_uc;$/;"	t	typeref:typename:unsigned char
+stbi_us	src/stb_image.h	/^typedef unsigned short stbi_us;$/;"	t	typeref:typename:unsigned short
+stbi_zlib_decode_buffer	src/stb_image.h	/^STBIDEF int stbi_zlib_decode_buffer(char *obuffer, int olen, char const *ibuffer, int ilen)$/;"	f	typeref:typename:STBIDEF int
+stbi_zlib_decode_malloc	src/stb_image.h	/^STBIDEF char *stbi_zlib_decode_malloc(char const *buffer, int len, int *outlen)$/;"	f	typeref:typename:STBIDEF char *
+stbi_zlib_decode_malloc_guesssize	src/stb_image.h	/^STBIDEF char *stbi_zlib_decode_malloc_guesssize(const char *buffer, int len, int initial_size, i/;"	f	typeref:typename:STBIDEF char *
+stbi_zlib_decode_malloc_guesssize_headerflag	src/stb_image.h	/^STBIDEF char *stbi_zlib_decode_malloc_guesssize_headerflag(const char *buffer, int len, int init/;"	f	typeref:typename:STBIDEF char *
+stbi_zlib_decode_noheader_buffer	src/stb_image.h	/^STBIDEF int stbi_zlib_decode_noheader_buffer(char *obuffer, int olen, const char *ibuffer, int i/;"	f	typeref:typename:STBIDEF int
+stbi_zlib_decode_noheader_malloc	src/stb_image.h	/^STBIDEF char *stbi_zlib_decode_noheader_malloc(char const *buffer, int len, int *outlen)$/;"	f	typeref:typename:STBIDEF char *
+step	src/stb_image.h	/^   int parse, step;$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:int
+succ_high	src/stb_image.h	/^   int            succ_high;$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:int
+succ_low	src/stb_image.h	/^   int            succ_low;$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:int
+suffix	src/stb_image.h	/^   stbi_uc suffix;$/;"	m	struct:__anon9cbf1c1d1208	typeref:typename:stbi_uc
+test	Makefile	/^test: $(SRC_DIR)\/test\/test.c debug$/;"	t
+test	mosaic/Makefile	/^test: debug src\/test\/test.c$/;"	t
+title	src/window.h	/^	const char *title;$/;"	m	struct:glue_window	typeref:typename:const char *
+todo	src/stb_image.h	/^   int restart_interval, todo;$/;"	m	struct:__anon9cbf1c1d0808	typeref:typename:int
+tq	src/stb_image.h	/^      int tq;$/;"	m	struct:__anon9cbf1c1d0808::__anon9cbf1c1d0908	typeref:typename:int
+transparent	src/stb_image.h	/^   int flags, bgindex, ratio, transparent, eflags;$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:int
+type	src/stb_image.h	/^   stbi__uint32 type;$/;"	m	struct:__anon9cbf1c1d0d08	typeref:typename:stbi__uint32
+type	src/stb_image.h	/^   stbi_uc size,type,channel;$/;"	m	struct:__anon9cbf1c1d1108	typeref:typename:stbi_uc
+v	src/stb_image.h	/^      int h,v;$/;"	m	struct:__anon9cbf1c1d0808::__anon9cbf1c1d0908	typeref:typename:int
+validate_uint32	src/stb_image.h	/^typedef unsigned char validate_uint32[sizeof(stbi__uint32)==4 ? 1 : -1];$/;"	t	typeref:typename:unsigned char[sizeof (stbi__uint32)==4?1:-1]
+value	src/stb_image.h	/^   stbi__uint16 value[288];$/;"	m	struct:__anon9cbf1c1d0b08	typeref:typename:stbi__uint16[288]
+values	src/stb_image.h	/^   stbi_uc  values[256];$/;"	m	struct:__anon9cbf1c1d0708	typeref:typename:stbi_uc[256]
+vao	src/shape.h	/^	unsigned int vao;$/;"	m	struct:glue_shape	typeref:typename:unsigned int
+vbo	src/shape.h	/^	unsigned int vbo;$/;"	m	struct:glue_shape	typeref:typename:unsigned int
+vertex_count	src/shape.h	/^	unsigned int vertex_count;$/;"	m	struct:glue_shape	typeref:typename:unsigned int
+vertices	src/shape.h	/^	struct glue_shape_vertex *vertices;$/;"	m	struct:glue_shape	typeref:struct:glue_shape_vertex *
+vs	src/stb_image.h	/^   int hs,vs;   \/\/ expansion factor in each axis$/;"	m	struct:__anon9cbf1c1d0a08	typeref:typename:int
+w	src/stb_image.h	/^   int w,h;$/;"	m	struct:__anon9cbf1c1d1308	typeref:typename:int
+w2	src/stb_image.h	/^      int x,y,w2,h2;$/;"	m	struct:__anon9cbf1c1d0808::__anon9cbf1c1d0908	typeref:typename:int
+w_lores	src/stb_image.h	/^   int w_lores; \/\/ horizontal pixels pre-expansion$/;"	m	struct:__anon9cbf1c1d0a08	typeref:typename:int
+width	src/window.h	/^	unsigned int width;$/;"	m	struct:glue_window	typeref:typename:unsigned int
+window	src/renderer.h	/^	struct glue_window *window;$/;"	m	struct:glue_renderer	typeref:struct:glue_window *
+winptr	src/window.h	/^	GLFWwindow* winptr;$/;"	m	struct:glue_window	typeref:typename:GLFWwindow *
+x	src/stb_image.h	/^      int x,y,w2,h2;$/;"	m	struct:__anon9cbf1c1d0808::__anon9cbf1c1d0908	typeref:typename:int
+y	src/stb_image.h	/^      int x,y,w2,h2;$/;"	m	struct:__anon9cbf1c1d0808::__anon9cbf1c1d0908	typeref:typename:int
+ypos	src/stb_image.h	/^   int ypos;    \/\/ which pre-expansion row we're on$/;"	m	struct:__anon9cbf1c1d0a08	typeref:typename:int
+ystep	src/stb_image.h	/^   int ystep;   \/\/ how far through vertical expansion we are$/;"	m	struct:__anon9cbf1c1d0a08	typeref:typename:int
+z_distance	src/stb_image.h	/^   stbi__zhuffman z_length, z_distance;$/;"	m	struct:__anon9cbf1c1d0c08	typeref:typename:stbi__zhuffman
+z_expandable	src/stb_image.h	/^   int   z_expandable;$/;"	m	struct:__anon9cbf1c1d0c08	typeref:typename:int
+z_length	src/stb_image.h	/^   stbi__zhuffman z_length, z_distance;$/;"	m	struct:__anon9cbf1c1d0c08	typeref:typename:stbi__zhuffman
+zbuffer	src/stb_image.h	/^   stbi_uc *zbuffer, *zbuffer_end;$/;"	m	struct:__anon9cbf1c1d0c08	typeref:typename:stbi_uc *
+zbuffer_end	src/stb_image.h	/^   stbi_uc *zbuffer, *zbuffer_end;$/;"	m	struct:__anon9cbf1c1d0c08	typeref:typename:stbi_uc *
+zout	src/stb_image.h	/^   char *zout;$/;"	m	struct:__anon9cbf1c1d0c08	typeref:typename:char *
+zout_end	src/stb_image.h	/^   char *zout_end;$/;"	m	struct:__anon9cbf1c1d0c08	typeref:typename:char *
+zout_start	src/stb_image.h	/^   char *zout_start;$/;"	m	struct:__anon9cbf1c1d0c08	typeref:typename:char *
